@@ -1,0 +1,75 @@
+{
+  "modes": {
+    "testing": {
+      "show_intro": false,
+      "show_feedback": false,
+      "log_interactions": true,
+      "ai_enabled": true,
+      "debug_mode": true,
+      "session_timeout": null
+    },
+    "evaluation": {
+      "show_intro": true,
+      "show_feedback": true,
+      "log_interactions": true,
+      "ai_enabled": true,
+      "debug_mode": false,
+      "session_timeout": 1800,
+      "min_reading_time": 300
+    }
+  },
+  "tracking": {
+    "min_pause_duration": 3000,
+    "section_transition_threshold": 500,
+    "reread_detection_distance": 200,
+    "scroll_sample_rate": 100,
+    "hover_detection_delay": 1000,
+    "selection_tracking": true,
+    "focus_tracking": true
+  },
+  "ai_behavior": {
+    "min_intervention_gap": 30,
+    "confidence_threshold": 0.7,
+    "max_interventions_per_section": 2,
+    "prefer_natural_breaks": true
+  },
+  "ui_settings": {
+    "assistant_position": "right",
+    "notification_duration": 5000,
+    "feedback_prompt_delay": 2000,
+    "highlight_duration": 3000,
+    "widget_opacity": 0.95
+  },
+  "observation_templates": {
+    "section_start": "The user starts reading the {{section}} section.",
+    "section_complete": "The user completes the {{section}} section after {{duration}} seconds.",
+    "pause": "The user pauses at '{{content}}' for {{duration}} seconds.",
+    "reread": "The user re-reads the content about '{{topic}}'.",
+    "hover": "The user hovers over the term '{{term}}'.",
+    "selection": "The user highlights the text: '{{text}}'.",
+    "rapid_scroll": "The user scrolls quickly through {{content}}.",
+    "slow_reading": "The user reads '{{content}}' slowly, possibly indicating difficulty.",
+    "focus_lost": "The user's attention leaves the document.",
+    "focus_return": "The user returns to reading after {{duration}} seconds."
+  },
+  "metrics": {
+    "reading_speed_thresholds": {
+      "fast": 400,
+      "normal": 250,
+      "slow": 150
+    },
+    "confusion_indicators": [
+      "multiple_rereads",
+      "long_pause",
+      "highlight_difficult_term",
+      "scroll_back_pattern"
+    ],
+    "engagement_indicators": [
+      "consistent_reading_pace",
+      "section_completion",
+      "note_taking",
+      "systematic_progression"
+    ]
+  }
+}
+

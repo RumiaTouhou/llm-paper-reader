@@ -1,0 +1,289 @@
+{
+  "session_id": "test_a1f55282_20250620_125620",
+  "participant_id": "test_a1f55282",
+  "mode": "testing",
+  "start_time": "2025-06-20T12:56:20.433786",
+  "end_time": "2025-06-20T13:02:58.432535",
+  "metrics": {
+    "total_reading_time": 397.998749,
+    "sections_completed": 1,
+    "ai_interventions": 6,
+    "interventions_accepted": 1,
+    "interventions_rejected": 0,
+    "pauses_detected": 2,
+    "rereading_detected": 1
+  },
+  "interactions": [
+    {
+      "timestamp": "2025-06-20T12:56:26.246807",
+      "type": "user_behavior",
+      "data": {
+        "observation": "The user pauses at 'MARLUI: Multi-Agent Reinforcement Learning for Adaptive UIs' for 3 seconds.",
+        "type": "pause",
+        "timestamp": 1750413386241,
+        "context": {
+          "section": "MARLUI: Multi-Agent Reinforcement Learning for Adaptive UIs",
+          "scrollPosition": 0,
+          "readingSpeed": null
+        }
+      }
+    },
+    {
+      "timestamp": "2025-06-20T12:57:16.326534",
+      "type": "user_behavior",
+      "data": {
+        "observation": "The user highlights the text: 'multi-agent reinforcement learning'.",
+        "type": "selection",
+        "timestamp": 1750413420137,
+        "context": {
+          "section": "1 INTRODUCTION",
+          "scrollPosition": 700,
+          "readingSpeed": 0
+        }
+      }
+    },
+    {
+      "timestamp": "2025-06-20T12:58:03.276701",
+      "type": "ai_response",
+      "data": {
+        "observation": "The user highlights the text: 'multi-agent reinforcement learning'.",
+        "response": "Multi-agent reinforcement learning (MARL) is when multiple AI agents learn to make decisions by interacting with their environment and each other. Think of it like a team of robots learning to collaborate through trial and error. We'll explore this more deeply in the paper - would you like me to highlight key examples as you read?"
+      }
+    },
+    {
+      "timestamp": "2025-06-20T12:58:03.282736",
+      "type": "user_behavior",
+      "data": {
+        "observation": "The user re-reads the content about 'Adaptive user interfaces (UIs) automatically change an interface to better support users' tasks. Rec'.",
+        "type": "reread",
+        "timestamp": 1750413430518,
+        "context": {
+          "section": "MARLUI: Multi-Agent Reinforcement Learning for Adaptive UIs",
+          "scrollPosition": 400,
+          "readingSpeed": 46.357999652315
+        }
+      }
+    },
+    {
+      "timestamp": "2025-06-20T12:58:52.357325",
+      "type": "ai_response",
+      "data": {
+        "observation": "The user re-reads the content about 'Adaptive user interfaces (UIs) automatically change an interface to better support users' tasks. Rec'.",
+        "response": "Multi-agent reinforcement learning (MARL) is when multiple AI agents learn together by trial-and-error, adapting their strategies based on rewards. In this paper's context, these agents collaborate to improve UI adaptations. Let me know if you'd like a deeper example or specific paper references!"
+      }
+    },
+    {
+      "timestamp": "2025-06-20T12:58:52.358327",
+      "type": "user_feedback",
+      "data": {
+        "helpful": true
+      }
+    },
+    {
+      "timestamp": "2025-06-20T12:58:52.674352",
+      "type": "user_behavior",
+      "data": {
+        "observation": "The user starts reading the 1 INTRODUCTION section.",
+        "type": "section_start",
+        "timestamp": 1750413431453,
+        "context": {
+          "section": "1 INTRODUCTION",
+          "scrollPosition": 900,
+          "readingSpeed": 61.97532255338329
+        }
+      }
+    },
+    {
+      "timestamp": "2025-06-20T12:59:43.504396",
+      "type": "ai_response",
+      "data": {
+        "observation": "The user starts reading the 1 INTRODUCTION section.",
+        "response": "Multi-agent reinforcement learning (MARL) is where multiple AI agents learn to make decisions by interacting with an environment and each other. In this paper, it's used to help user interfaces adapt to different users' needs automatically. Would you like a more detailed explanation as you continue reading?"
+      }
+    },
+    {
+      "timestamp": "2025-06-20T12:59:43.508388",
+      "type": "user_behavior",
+      "data": {
+        "observation": "The user completes the MARLUI: Multi-Agent Reinforcement Learning for Adaptive UIs section after 1 seconds.",
+        "type": "section_complete",
+        "timestamp": 1750413431453,
+        "context": {
+          "section": "MARLUI: Multi-Agent Reinforcement Learning for Adaptive UIs",
+          "scrollPosition": 900,
+          "readingSpeed": 61.97532255338329
+        }
+      }
+    },
+    {
+      "timestamp": "2025-06-20T13:00:28.767195",
+      "type": "user_behavior",
+      "data": {
+        "observation": "The user pauses at '2.1 Computational User Modelling' for 3 seconds.",
+        "type": "pause",
+        "timestamp": 1750413628458,
+        "context": {
+          "section": "2.1 Computational User Modelling",
+          "scrollPosition": 2125,
+          "readingSpeed": 0
+        }
+      }
+    },
+    {
+      "timestamp": "2025-06-20T13:01:20.733789",
+      "type": "ai_response",
+      "data": {
+        "observation": "The user pauses at '2.1 Computational User Modelling' for 3 seconds.",
+        "response": "I notice you're focused on Multi-agent Reinforcement Learning (MARL) in Section 2.1. MARL extends single-agent RL by having multiple agents learn simultaneously while interacting - think of it like multiple AIs collaborating/competing in a shared environment. Would you like me to elaborate further on this core concept before you continue?"
+      }
+    },
+    {
+      "timestamp": "2025-06-20T13:01:20.737796",
+      "type": "user_behavior",
+      "data": {
+        "observation": "The user highlights the text: 'Hierarchical Reinforcement Learning'.",
+        "type": "selection",
+        "timestamp": 1750413455945,
+        "context": {
+          "section": "1 INTRODUCTION",
+          "scrollPosition": 900,
+          "readingSpeed": 0
+        }
+      }
+    },
+    {
+      "timestamp": "2025-06-20T13:02:11.691875",
+      "type": "ai_response",
+      "data": {
+        "observation": "The user highlights the text: 'Hierarchical Reinforcement Learning'.",
+        "response": "Hierarchical Reinforcement Learning breaks complex problems into smaller sub-tasks with different levels of abstraction - like having managers and workers in a company. This is particularly useful in MARLUI for handling different UI adaptation levels. Would you like a quick example?"
+      }
+    },
+    {
+      "timestamp": "2025-06-20T13:02:12.007303",
+      "type": "user_behavior",
+      "data": {
+        "observation": "The user highlights the text: 'Hierarchical Reinforcement Learning'.",
+        "type": "selection",
+        "timestamp": 1750413522481,
+        "context": {
+          "section": "1 INTRODUCTION",
+          "scrollPosition": 1000,
+          "readingSpeed": 0
+        }
+      }
+    },
+    {
+      "timestamp": "2025-06-20T13:02:58.431520",
+      "type": "ai_response",
+      "data": {
+        "observation": "The user highlights the text: 'Hierarchical Reinforcement Learning'.",
+        "response": "I notice you're confused about Hierarchical Reinforcement Learning - let me quickly clarify this key concept. It's an approach where complex tasks are broken into manageable subtasks arranged in a hierarchy, making learning more efficient (like managing subgoals in MARLUI)."
+      }
+    }
+  ],
+  "ai_memory": {
+    "user_state": {
+      "mood": "confused",
+      "confusion_level": 0.8,
+      "engagement_level": 0.85,
+      "skills": [],
+      "interests": [],
+      "current_topic": null,
+      "cognitive_load": "high",
+      "potential_knowledge_gaps": [
+        "Hierarchical Reinforcement Learning",
+        "Computational User Modelling",
+        "multi-agent reinforcement learning",
+        "adaptive user interfaces"
+      ],
+      "needs_help_probability": 0.9,
+      "at_natural_break": false
+    },
+    "paper_context": {
+      "title": "MARLUI: Multi-Agent Reinforcement Learning for Adaptive UIs",
+      "current_section": "2.1 Computational User Modelling",
+      "sections_seen": [
+        "INTRODUCTION",
+        "1 INTRODUCTION",
+        "Computational User Modelling",
+        "2.1 Computational User Modelling"
+      ]
+    },
+    "reading_metrics": {
+      "sections_completed": 3,
+      "total_reading_time": 196.39946007728577,
+      "average_time_per_section": 65.46648669242859,
+      "concepts_struggled": [],
+      "current_section": "2.1 Computational User Modelling"
+    },
+    "intervention_history": [
+      {
+        "timestamp": "2025-06-20T12:58:03.276701",
+        "intervention": {
+          "should_intervene": true,
+          "intervention_type": "concept_explanation",
+          "urgency": "high",
+          "specific_target": "multi-agent reinforcement learning",
+          "reasoning": "User is showing high confusion (0.7) and engagement (0.8) with 'multi-agent reinforcement learning', and has both highlighted and paused on the concept. Their mood is 'confused' and cognitive load is 'high', suggesting they need immediate clarification to proceed effectively.",
+          "respect_reading_flow": false
+        }
+      },
+      {
+        "timestamp": "2025-06-20T12:58:52.357325",
+        "intervention": {
+          "should_intervene": true,
+          "intervention_type": "concept_explanation",
+          "urgency": "high",
+          "specific_target": "multi-agent reinforcement learning",
+          "reasoning": "User shows high confusion (0.7) and is re-reading, has high cognitive load, and explicitly highlighted 'multi-agent reinforcement learning'. This is a core concept in the paper title and user's potential knowledge gaps. Despite no natural break, immediate explanation is justified given strong struggle signals.",
+          "respect_reading_flow": false
+        }
+      },
+      {
+        "timestamp": "2025-06-20T12:59:43.504396",
+        "intervention": {
+          "should_intervene": true,
+          "intervention_type": "concept_explanation",
+          "urgency": "medium",
+          "specific_target": "multi-agent reinforcement learning",
+          "reasoning": "User is engaged but showing potential knowledge gaps on key concepts ('multi-agent reinforcement learning' and 'adaptive user interfaces'). The user highlighted and reread these concepts, indicating they are actively trying to understand them. While at a section transition (good opportunity), early confusion is better addressed proactively. The high engagement (0.9) suggests receptiveness.",
+          "respect_reading_flow": true
+        }
+      },
+      {
+        "timestamp": "2025-06-20T13:01:20.733789",
+        "intervention": {
+          "should_intervene": true,
+          "intervention_type": "concept_explanation",
+          "urgency": "high",
+          "specific_target": "Multi-agent reinforcement learning",
+          "reasoning": "User is at a natural break point with high confusion (0.7) and cognitive load, showing strong engagement but struggling specifically with multi-agent reinforcement learning. The presence of rereading and pausing behaviors indicates immediate need for clarification on this core concept to proceed effectively.",
+          "respect_reading_flow": true
+        }
+      },
+      {
+        "timestamp": "2025-06-20T13:02:11.691875",
+        "intervention": {
+          "should_intervene": true,
+          "intervention_type": "concept_explanation",
+          "urgency": "high",
+          "specific_target": "Hierarchical Reinforcement Learning",
+          "reasoning": "User is showing high confusion (0.75) and is pausing while highlighting 'Hierarchical Reinforcement Learning', indicating immediate struggle with this concept. Though not at a natural break point, the high need for help (0.85) and cognitive load justify interrupting.",
+          "respect_reading_flow": false
+        }
+      },
+      {
+        "timestamp": "2025-06-20T13:02:58.431520",
+        "intervention": {
+          "should_intervene": true,
+          "intervention_type": "concept_explanation",
+          "urgency": "high",
+          "specific_target": "Hierarchical Reinforcement Learning",
+          "reasoning": "User shows high confusion (0.8) and cognitive load, specifically struggling with 'Hierarchical Reinforcement Learning' (highlighted twice). Despite not being at a natural break point, the immediate need for concept clarification outweighs flow disruption risks given high need_help_probability (0.9) and engagement (0.85).",
+          "respect_reading_flow": false
+        }
+      }
+    ]
+  }
+}

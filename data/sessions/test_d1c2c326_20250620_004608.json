@@ -1,0 +1,694 @@
+{
+  "session_id": "test_d1c2c326_20250620_004608",
+  "participant_id": "test_d1c2c326",
+  "mode": "testing",
+  "start_time": "2025-06-20T00:46:08.127050",
+  "end_time": "2025-06-20T01:12:03.691377",
+  "metrics": {
+    "total_reading_time": 1555.564327,
+    "sections_completed": 0,
+    "ai_interventions": 20,
+    "interventions_accepted": 0,
+    "interventions_rejected": 0,
+    "pauses_detected": 8,
+    "rereading_detected": 0
+  },
+  "interactions": [
+    {
+      "timestamp": "2025-06-20T00:46:23.411016",
+      "type": "user_behavior",
+      "data": {
+        "observation": "The user highlights the text: 'multi-agent reinforcement learning (MARL)'.",
+        "type": "selection",
+        "timestamp": 1750369583402,
+        "context": {
+          "scrollPosition": 800,
+          "readingSpeed": 180.77734257306417
+        }
+      }
+    },
+    {
+      "timestamp": "2025-06-20T00:47:07.002890",
+      "type": "ai_response",
+      "data": {
+        "observation": "The user highlights the text: 'multi-agent reinforcement learning (MARL)'.",
+        "response": "Multi-agent reinforcement learning (MARL) studies how multiple autonomous agents learn to make decisions by interacting with an environment\u2014each agent aims to maximize its own rewards while potentially competing or cooperating with others. Think of it like a team of robots learning to play soccer together! Would you like a deeper example?"
+      }
+    },
+    {
+      "timestamp": "2025-06-20T00:47:07.003883",
+      "type": "user_behavior",
+      "data": {
+        "observation": "The user pauses at 'Table of Contents' for 3 seconds.",
+        "type": "pause",
+        "timestamp": 1750369586027,
+        "context": {
+          "scrollPosition": 800,
+          "readingSpeed": 180.77734257306417
+        }
+      }
+    },
+    {
+      "timestamp": "2025-06-20T00:47:42.242494",
+      "type": "ai_response",
+      "data": {
+        "observation": "The user pauses at 'Table of Contents' for 3 seconds.",
+        "response": "I noticed your interest in multi-agent reinforcement learning (MARL). Would you like some curated resources to explore this concept further before diving into the paper?"
+      }
+    },
+    {
+      "timestamp": "2025-06-20T00:47:42.242494",
+      "type": "user_behavior",
+      "data": {
+        "observation": "The user highlights the text: 'multi-agent reinforcement learning (MARL)'.",
+        "type": "selection",
+        "timestamp": 1750369588858,
+        "context": {
+          "scrollPosition": 800,
+          "readingSpeed": 180.77734257306417
+        }
+      }
+    },
+    {
+      "timestamp": "2025-06-20T00:48:23.444809",
+      "type": "ai_response",
+      "data": {
+        "observation": "The user highlights the text: 'multi-agent reinforcement learning (MARL)'.",
+        "response": "Let me help clarify Multi-Agent Reinforcement Learning (MARL) quickly: It's when multiple AI agents learn simultaneously by interacting with an environment and each other. Think of it like teaching a team of robots to cooperate through trial and error. Would you like me to elaborate further?"
+      }
+    },
+    {
+      "timestamp": "2025-06-20T00:48:23.444809",
+      "type": "user_behavior",
+      "data": {
+        "observation": "The user pauses at 'Table of Contents' for 3 seconds.",
+        "type": "pause",
+        "timestamp": 1750369593547,
+        "context": {
+          "scrollPosition": 1600,
+          "readingSpeed": 57.34355960146226
+        }
+      }
+    },
+    {
+      "timestamp": "2025-06-20T00:49:00.334896",
+      "type": "ai_response",
+      "data": {
+        "observation": "The user pauses at 'Table of Contents' for 3 seconds.",
+        "response": "I noticed you're pausing on MARL concepts - this is when multiple AI agents learn simultaneously by interacting with their environment and each other. Would you like a quick example to clarify?"
+      }
+    },
+    {
+      "timestamp": "2025-06-20T00:49:00.335888",
+      "type": "user_behavior",
+      "data": {
+        "observation": "The user highlights the text: 'touch interactions'.",
+        "type": "selection",
+        "timestamp": 1750369598954,
+        "context": {
+          "scrollPosition": 2200,
+          "readingSpeed": 159.14064054107817
+        }
+      }
+    },
+    {
+      "timestamp": "2025-06-20T00:49:37.434817",
+      "type": "ai_response",
+      "data": {
+        "observation": "The user highlights the text: 'touch interactions'.",
+        "response": "Let me briefly clarify these core concepts before you proceed. Multi-agent reinforcement learning (MARL) involves multiple AI agents learning through trial-and-error interactions, while touch interactions refer to how users physically interact with touchscreen devices. Would you like me to expand further on either concept?"
+      }
+    },
+    {
+      "timestamp": "2025-06-20T00:49:37.435816",
+      "type": "user_behavior",
+      "data": {
+        "observation": "The user highlights the text: 'touch interactions'.",
+        "type": "selection",
+        "timestamp": 1750369599456,
+        "context": {
+          "scrollPosition": 2200,
+          "readingSpeed": 159.14064054107817
+        }
+      }
+    },
+    {
+      "timestamp": "2025-06-20T00:50:13.694711",
+      "type": "ai_response",
+      "data": {
+        "observation": "The user highlights the text: 'touch interactions'.",
+        "response": "I notice you're engaging deeply with 'touch interactions' concepts. Here are some helpful resources that might clarify this topic for you: [link to touch interaction examples]. Take your time - this can be a tricky concept at first!"
+      }
+    },
+    {
+      "timestamp": "2025-06-20T00:50:13.694711",
+      "type": "user_behavior",
+      "data": {
+        "observation": "The user highlights the text: 'Recently, reinforcement learning gained popularity within the research area of computational user mo'.",
+        "type": "selection",
+        "timestamp": 1750369599795,
+        "context": {
+          "scrollPosition": 2200,
+          "readingSpeed": 159.14064054107817
+        }
+      }
+    },
+    {
+      "timestamp": "2025-06-20T00:50:54.038962",
+      "type": "ai_response",
+      "data": {
+        "observation": "The user highlights the text: 'Recently, reinforcement learning gained popularity within the research area of computational user mo'.",
+        "response": "Multi-agent reinforcement learning (MARL) extends traditional reinforcement learning to environments with multiple interacting agents. Each agent learns by observing rewards from both its own actions and other agents' behaviors. Would you like a quick example to clarify how this applies to computational user modeling?"
+      }
+    },
+    {
+      "timestamp": "2025-06-20T00:50:54.038962",
+      "type": "user_behavior",
+      "data": {
+        "observation": "The user highlights the text: 'Recently, reinforcement learning gained popularity within the research area of computational user mo'.",
+        "type": "selection",
+        "timestamp": 1750369600330,
+        "context": {
+          "scrollPosition": 2200,
+          "readingSpeed": 159.14064054107817
+        }
+      }
+    },
+    {
+      "timestamp": "2025-06-20T00:51:34.416838",
+      "type": "ai_response",
+      "data": {
+        "observation": "The user highlights the text: 'Recently, reinforcement learning gained popularity within the research area of computational user mo'.",
+        "response": "I notice you're seeking clarity on reinforcement learning in computational user modeling. Simply put, it's a machine learning approach where systems learn optimal behaviors by receiving rewards/penalties from user interactions (like adapting interfaces based on user feedback). Would you like a concrete example from the Introduction section to clarify this?"
+      }
+    },
+    {
+      "timestamp": "2025-06-20T00:51:34.416838",
+      "type": "user_behavior",
+      "data": {
+        "observation": "The user pauses at 'Table of Contents' for 3 seconds.",
+        "type": "pause",
+        "timestamp": 1750369603340,
+        "context": {
+          "scrollPosition": 2404,
+          "readingSpeed": 67.64755623203112
+        }
+      }
+    },
+    {
+      "timestamp": "2025-06-20T00:52:14.534180",
+      "type": "ai_response",
+      "data": {
+        "observation": "The user pauses at 'Table of Contents' for 3 seconds.",
+        "response": "I noticed your interest in reinforcement learning for user modeling and touch interactions. Would you like some curated resources to deepen your understanding before continuing? These might help clarify key concepts discussed later in the paper."
+      }
+    },
+    {
+      "timestamp": "2025-06-20T00:52:14.534180",
+      "type": "user_behavior",
+      "data": {
+        "observation": "The user highlights the text: 'nt) reinforcement learning and its underlying decision processes. Specifically, we assume that users'.",
+        "type": "selection",
+        "timestamp": 1750369612834,
+        "context": {
+          "scrollPosition": 5100,
+          "readingSpeed": 241.27691165553082
+        }
+      }
+    },
+    {
+      "timestamp": "2025-06-20T00:52:57.099865",
+      "type": "ai_response",
+      "data": {
+        "observation": "The user highlights the text: 'nt) reinforcement learning and its underlying decision processes. Specifically, we assume that users'.",
+        "response": "Reinforcement learning is a type of machine learning where an agent learns to make decisions by receiving rewards or penalties for its actions. The agent's goal is to maximize cumulative reward over time through trial and error. This connects to user modeling as we can treat user interactions similarly - learning optimal responses based on feedback."
+      }
+    },
+    {
+      "timestamp": "2025-06-20T00:52:57.100884",
+      "type": "user_behavior",
+      "data": {
+        "observation": "The user highlights the text: 'nt) reinforcement learning and its underlying decision processes. Specifically, we assume that users'.",
+        "type": "selection",
+        "timestamp": 1750369613051,
+        "context": {
+          "scrollPosition": 5100,
+          "readingSpeed": 241.27691165553082
+        }
+      }
+    },
+    {
+      "timestamp": "2025-06-20T00:53:35.258975",
+      "type": "ai_response",
+      "data": {
+        "observation": "The user highlights the text: 'nt) reinforcement learning and its underlying decision processes. Specifically, we assume that users'.",
+        "response": "I notice you're working through reinforcement learning mechanisms - let me briefly clarify. In RL, an agent learns by interacting with its environment through actions, receiving rewards/penalties that shape future decisions (like trial-and-error learning). Would explaining Markov Decision Processes help here?"
+      }
+    },
+    {
+      "timestamp": "2025-06-20T00:53:35.258975",
+      "type": "user_behavior",
+      "data": {
+        "observation": "The user highlights the text: 'Partially Observable Markov Decision Processes (POMDP)'.",
+        "type": "selection",
+        "timestamp": 1750369617162,
+        "context": {
+          "scrollPosition": 5100,
+          "readingSpeed": 241.27691165553082
+        }
+      }
+    },
+    {
+      "timestamp": "2025-06-20T00:54:17.596492",
+      "type": "ai_response",
+      "data": {
+        "observation": "The user highlights the text: 'Partially Observable Markov Decision Processes (POMDP)'.",
+        "response": "I see you're working hard on POMDPs - let's break this down! A POMDP is simply an MDP where the agent can't directly observe the current state, but gets partial observations instead. This is crucial in reinforcement learning when agents must make decisions with limited information. Would you like a quick example to clarify?"
+      }
+    },
+    {
+      "timestamp": "2025-06-20T00:54:17.597500",
+      "type": "user_behavior",
+      "data": {
+        "observation": "The user highlights the text: 'Partially Observable Markov Decision Processes (POMDP)'.",
+        "type": "selection",
+        "timestamp": 1750369617354,
+        "context": {
+          "scrollPosition": 5100,
+          "readingSpeed": 241.27691165553082
+        }
+      }
+    },
+    {
+      "timestamp": "2025-06-20T00:54:59.325142",
+      "type": "ai_response",
+      "data": {
+        "observation": "The user highlights the text: 'Partially Observable Markov Decision Processes (POMDP)'.",
+        "response": "Let me help clarify POMDPs - they're a framework where agents make decisions with incomplete information about the environment. Unlike regular MDPs where the state is fully observable, POMDPs use observations and belief states to handle uncertainty."
+      }
+    },
+    {
+      "timestamp": "2025-06-20T00:54:59.326137",
+      "type": "user_behavior",
+      "data": {
+        "observation": "The user pauses at 'Table of Contents' for 3 seconds.",
+        "type": "pause",
+        "timestamp": 1750369626538,
+        "context": {
+          "scrollPosition": 2604,
+          "readingSpeed": 1282.051282051282
+        }
+      }
+    },
+    {
+      "timestamp": "2025-06-20T00:55:40.941596",
+      "type": "ai_response",
+      "data": {
+        "observation": "The user pauses at 'Table of Contents' for 3 seconds.",
+        "response": "I notice you're curious about POMDPs! These are decision-making models where agents can't fully observe the environment (unlike MDPs). They use belief states to track uncertainty - we'll see this explained soon in the Methodology section."
+      }
+    },
+    {
+      "timestamp": "2025-06-20T00:55:40.942598",
+      "type": "user_behavior",
+      "data": {
+        "observation": "The user pauses at 'Table of Contents' for 3 seconds.",
+        "type": "pause",
+        "timestamp": 1750369629623,
+        "context": {
+          "scrollPosition": 3900,
+          "readingSpeed": 1552.2388059701493
+        }
+      }
+    },
+    {
+      "timestamp": "2025-06-20T00:56:20.042939",
+      "type": "ai_response",
+      "data": {
+        "observation": "The user pauses at 'Table of Contents' for 3 seconds.",
+        "response": "I notice you're exploring POMDPs - these are Markov Decision Processes where the agent can't directly observe the current state, adding complexity. They're fundamental in AI/robotics for modeling uncertain environments. Would you like a quick example or diagram to clarify?"
+      }
+    },
+    {
+      "timestamp": "2025-06-20T00:56:20.049947",
+      "type": "user_behavior",
+      "data": {
+        "observation": "The user highlights the text: 'Processes'.",
+        "type": "selection",
+        "timestamp": 1750369648676,
+        "context": {
+          "scrollPosition": 5477,
+          "readingSpeed": 202.72020725388603
+        }
+      }
+    },
+    {
+      "timestamp": "2025-06-20T00:57:03.062545",
+      "type": "ai_response",
+      "data": {
+        "observation": "The user highlights the text: 'Processes'.",
+        "response": "A Partially Observable Markov Decision Process (POMDP) is a framework for modeling decision-making when the system state isn't fully observable. It extends MDPs by incorporating uncertainty about the current state. Let me know if you'd like a concrete example to clarify this further!"
+      }
+    },
+    {
+      "timestamp": "2025-06-20T00:57:03.073555",
+      "type": "user_behavior",
+      "data": {
+        "observation": "The user highlights the text: 'Partially Observable Markov Decision Processes (POMDP) is a mathematical framework for single-agent '.",
+        "type": "selection",
+        "timestamp": 1750369650870,
+        "context": {
+          "scrollPosition": 5477,
+          "readingSpeed": 202.72020725388603
+        }
+      }
+    },
+    {
+      "timestamp": "2025-06-20T00:57:43.954939",
+      "type": "ai_response",
+      "data": {
+        "observation": "The user highlights the text: 'Partially Observable Markov Decision Processes (POMDP) is a mathematical framework for single-agent '.",
+        "response": "Let me help clarify POMDPs - they're like regular Markov Decision Processes (MDPs) where the agent can't fully observe the current state, but must maintain a 'belief state' (probability distribution over possible states). This is common in real-world applications like robotics where sensors provide limited information. Would you like a concrete example or formal definition?"
+      }
+    },
+    {
+      "timestamp": "2025-06-20T00:57:43.973588",
+      "type": "user_behavior",
+      "data": {
+        "observation": "The user pauses at 'Table of Contents' for 3 seconds.",
+        "type": "pause",
+        "timestamp": 1750369653671,
+        "context": {
+          "scrollPosition": 5784,
+          "readingSpeed": 107.36975857687419
+        }
+      }
+    },
+    {
+      "timestamp": "2025-06-20T00:58:24.577754",
+      "type": "ai_response",
+      "data": {
+        "observation": "The user pauses at 'Table of Contents' for 3 seconds.",
+        "response": "I notice you're at a good break point and seem engaged but somewhat confused about POMDPs. Would you like a quick explanation of how the POMDP framework helps agents handle uncertainty when making decisions?"
+      }
+    },
+    {
+      "timestamp": "2025-06-20T00:58:24.596052",
+      "type": "user_behavior",
+      "data": {
+        "observation": "The user pauses at 'Table of Contents' for 3 seconds.",
+        "type": "pause",
+        "timestamp": 1750369671365,
+        "context": {
+          "scrollPosition": 5869,
+          "readingSpeed": 29.323189094943732
+        }
+      }
+    },
+    {
+      "timestamp": "2025-06-20T00:59:05.866227",
+      "type": "ai_response",
+      "data": {
+        "observation": "The user pauses at 'Table of Contents' for 3 seconds.",
+        "response": "I notice you're struggling with POMDPs - these are decision-making frameworks where the system can't directly observe its current state (like when a robot has imperfect sensors). Would you like me to break this concept down for you before you proceed?"
+      }
+    },
+    {
+      "timestamp": "2025-06-20T00:59:05.879902",
+      "type": "user_behavior",
+      "data": {
+        "observation": "The user pauses at 'Table of Contents' for 3 seconds.",
+        "type": "pause",
+        "timestamp": 1750369684226,
+        "context": {
+          "scrollPosition": 6639,
+          "readingSpeed": 139.53488372093022
+        }
+      }
+    },
+    {
+      "timestamp": "2025-06-20T00:59:43.423434",
+      "type": "ai_response",
+      "data": {
+        "observation": "The user pauses at 'Table of Contents' for 3 seconds.",
+        "response": "I notice you're spending time on the Table of Contents. This section serves as a roadmap for the paper - it outlines all sections and subsections in order. Would you like me to explain how to navigate it effectively?"
+      }
+    }
+  ],
+  "ai_memory": {
+    "user_state": {
+      "mood": "confused but engaged",
+      "confusion_level": 0.75,
+      "engagement_level": 0.9,
+      "skills": [],
+      "interests": [],
+      "current_topic": null,
+      "cognitive_load": "high",
+      "potential_knowledge_gaps": [
+        "Table of Contents structure",
+        "Processes",
+        "Partially Observable Markov Decision Processes (POMDP)"
+      ],
+      "needs_help_probability": 0.8,
+      "at_natural_break": false
+    },
+    "paper_context": {
+      "title": null,
+      "current_section": "Table of Contents",
+      "sections_seen": [
+        "Table of Contents",
+        "Introduction",
+        "Introduction or Methodology"
+      ]
+    },
+    "reading_metrics": {
+      "sections_completed": 2,
+      "total_reading_time": 308.49132466316223,
+      "average_time_per_section": 154.24566233158112,
+      "concepts_struggled": [],
+      "current_section": "Introduction or Methodology"
+    },
+    "intervention_history": [
+      {
+        "timestamp": "2025-06-20T00:47:07.002890",
+        "intervention": {
+          "should_intervene": true,
+          "intervention_type": "concept_explanation",
+          "urgency": "medium",
+          "specific_target": "multi-agent reinforcement learning (MARL)",
+          "reasoning": "User is engaged but showing confusion indicators (highlighting) and has a medium probability of needing help. The concept 'multi-agent reinforcement learning (MARL)' is identified as a potential knowledge gap and is currently being read. Since they have paused and highlighted the concept, this is a good moment to provide a brief explanation without disrupting the reading flow too much.",
+          "respect_reading_flow": true
+        }
+      },
+      {
+        "timestamp": "2025-06-20T00:47:42.242494",
+        "intervention": {
+          "should_intervene": true,
+          "intervention_type": "related_resources",
+          "urgency": "medium",
+          "specific_target": "multi-agent reinforcement learning (MARL)",
+          "reasoning": "User has paused and highlighted 'multi-agent reinforcement learning (MARL)', indicating potential interest or confusion. Engagement is high and cognitive load is low, making it a good time to offer supplementary materials. The user is at a natural break point (Table of Contents), so intervention won't disrupt reading flow.",
+          "respect_reading_flow": true
+        }
+      },
+      {
+        "timestamp": "2025-06-20T00:48:23.444809",
+        "intervention": {
+          "should_intervene": true,
+          "intervention_type": "concept_explanation",
+          "urgency": "high",
+          "specific_target": "multi-agent reinforcement learning (MARL)",
+          "reasoning": "User shows high confusion (0.7) and engagement (0.8), with active highlighting and re-reading on MARL. The topic matches their knowledge gaps and struggle concepts, indicating immediate need for concept clarification. Intervention is justified despite non-break point due to clear struggle signals.",
+          "respect_reading_flow": false
+        }
+      },
+      {
+        "timestamp": "2025-06-20T00:49:00.334896",
+        "intervention": {
+          "should_intervene": true,
+          "intervention_type": "concept_explanation",
+          "urgency": "medium",
+          "specific_target": "multi-agent reinforcement learning (MARL)",
+          "reasoning": "User shows high confusion (0.75) specifically around MARL concept with repeated pauses and highlights, though not at natural break. Engagement remains high (0.85) suggesting they want to understand. Brief explanation now prevents compounding confusion.",
+          "respect_reading_flow": false
+        }
+      },
+      {
+        "timestamp": "2025-06-20T00:49:37.434817",
+        "intervention": {
+          "should_intervene": true,
+          "intervention_type": "concept_explanation",
+          "urgency": "high",
+          "specific_target": "multi-agent reinforcement learning (MARL) and touch interactions",
+          "reasoning": "User shows high confusion and cognitive load with repeated highlighting of these concepts, and is actively engaging but struggling. Despite the recent intervention, the high need warrants immediate concept clarification.",
+          "respect_reading_flow": false
+        }
+      },
+      {
+        "timestamp": "2025-06-20T00:50:13.694711",
+        "intervention": {
+          "should_intervene": true,
+          "intervention_type": "related_resources",
+          "urgency": "medium",
+          "specific_target": "touch interactions",
+          "reasoning": "User is showing high confusion (0.75) and is actively rereading and highlighting, indicating a struggle with 'touch interactions'. While not at a natural break point, the high cognitive load and clear knowledge gap warrant an intervention with supplemental materials to aid understanding.",
+          "respect_reading_flow": false
+        }
+      },
+      {
+        "timestamp": "2025-06-20T00:50:54.038962",
+        "intervention": {
+          "should_intervene": true,
+          "intervention_type": "concept_explanation",
+          "urgency": "medium",
+          "specific_target": "multi-agent reinforcement learning (MARL)",
+          "reasoning": "User is engaged but slightly confused, shows repeated highlighting (a confusion indicator), and is at a natural break point. MARL is identified as a potential knowledge gap and struggle concept. Intervening now respects reading flow while addressing confusion.",
+          "respect_reading_flow": true
+        }
+      },
+      {
+        "timestamp": "2025-06-20T00:51:34.416838",
+        "intervention": {
+          "should_intervene": true,
+          "intervention_type": "concept_explanation",
+          "urgency": "medium",
+          "specific_target": "reinforcement learning in computational user modeling",
+          "reasoning": "User exhibits high confusion (0.7) and is actively seeking clarity, especially around reinforcement learning. Repeated highlighting indicates this is a sticking point. Engagement remains high, suggesting they're motivated to understand. While not at a natural break point, the cognitive load is medium and recent confusion indicators warrant support.",
+          "respect_reading_flow": false
+        }
+      },
+      {
+        "timestamp": "2025-06-20T00:52:14.534180",
+        "intervention": {
+          "should_intervene": true,
+          "intervention_type": "related_resources",
+          "urgency": "medium",
+          "specific_target": "reinforcement learning in computational user modeling and touch interactions",
+          "reasoning": "User is at a natural break point (Table of Contents) and has shown exploratory interest by highlighting these two concepts. Their engagement is high but with medium cognitive load, making this a good time to offer supplementary materials before delving deeper into the paper. They've demonstrated potential knowledge gaps in these areas through their highlighting behavior.",
+          "respect_reading_flow": true
+        }
+      },
+      {
+        "timestamp": "2025-06-20T00:52:57.099865",
+        "intervention": {
+          "should_intervene": true,
+          "intervention_type": "concept_explanation",
+          "urgency": "medium",
+          "specific_target": "reinforcement learning mechanisms",
+          "reasoning": "User is engaged but highly confused (confusion_level 0.7) with high cognitive load, and showing struggle with reinforcement learning concepts. Recent highlighting and slow reading speed indicate need for clarification. While not at a natural break point, the high confusion and engagement suggest an immediate, brief explanation would help more than disrupting flow.",
+          "respect_reading_flow": true
+        }
+      },
+      {
+        "timestamp": "2025-06-20T00:53:35.257963",
+        "intervention": {
+          "should_intervene": true,
+          "intervention_type": "concept_explanation",
+          "urgency": "medium",
+          "specific_target": "reinforcement learning mechanisms",
+          "reasoning": "User is showing high confusion (0.8) but remains engaged, with specific struggles around reinforcement learning concepts. Multiple indicators suggest need for conceptual clarification (rereading, highlighting, high confusion level). While not at a natural break, cognitive load is high and concepts are foundational.",
+          "respect_reading_flow": false
+        }
+      },
+      {
+        "timestamp": "2025-06-20T00:54:17.596492",
+        "intervention": {
+          "should_intervene": true,
+          "intervention_type": "concept_explanation",
+          "urgency": "high",
+          "specific_target": "Partially Observable Markov Decision Processes (POMDP)",
+          "reasoning": "User shows high confusion (0.85) with specific struggles around POMDP concepts, is actively highlighting/rereading, and has multiple knowledge gaps in related RL concepts. Though not at a natural break, the cognitive load is high and immediate concept clarification would likely help.",
+          "respect_reading_flow": false
+        }
+      },
+      {
+        "timestamp": "2025-06-20T00:54:59.325142",
+        "intervention": {
+          "should_intervene": true,
+          "intervention_type": "concept_explanation",
+          "urgency": "high",
+          "specific_target": "Partially Observable Markov Decision Processes (POMDP)",
+          "reasoning": "User is showing high confusion (0.9) with repeated highlighting and rereading behavior, specifically struggling with POMDP concepts. Their determination and engagement suggest they would benefit from a focused explanation now rather than waiting for a natural break. The high cognitive load and multiple knowledge gaps around RL/POMDP concepts further justify immediate intervention.",
+          "respect_reading_flow": false
+        }
+      },
+      {
+        "timestamp": "2025-06-20T00:55:40.941596",
+        "intervention": {
+          "should_intervene": true,
+          "intervention_type": "concept_explanation",
+          "urgency": "medium",
+          "specific_target": "Partially Observable Markov Decision Processes (POMDP)",
+          "reasoning": "User is highly confused (0.85) but engaged (0.95) and at a natural break point (Table of Contents transition). They specifically highlighted 'POMDP' and have knowledge gaps around RL and POMDP concepts. A brief explanation now would provide anchor points for upcoming content.",
+          "respect_reading_flow": true
+        }
+      },
+      {
+        "timestamp": "2025-06-20T00:56:20.042939",
+        "intervention": {
+          "should_intervene": true,
+          "intervention_type": "concept_explanation",
+          "urgency": "medium",
+          "specific_target": "Partially Observable Markov Decision Processes (POMDP)",
+          "reasoning": "User is at a natural break point (Table of Contents), shows high confusion (0.75) but is exploring (engagement 0.9), and explicitly struggles with POMDP (listed in potential gaps). Intervention timing is good (>20s since last help).",
+          "respect_reading_flow": true
+        }
+      },
+      {
+        "timestamp": "2025-06-20T00:57:03.062545",
+        "intervention": {
+          "should_intervene": true,
+          "intervention_type": "concept_explanation",
+          "urgency": "high",
+          "specific_target": "Partially Observable Markov Decision Processes (POMDP)",
+          "reasoning": "User has high confusion and engagement, and is struggling with POMDP concept as evidenced by multiple highlights of the same text. Since they are in 'confused but exploring' mood, immediate concept explanation can prevent frustration and deepen understanding. High cognitive load suggests simple, clear explanation is needed. Even though not at a natural break, the high confusion level justifies intervention.",
+          "respect_reading_flow": false
+        }
+      },
+      {
+        "timestamp": "2025-06-20T00:57:43.954939",
+        "intervention": {
+          "should_intervene": true,
+          "intervention_type": "concept_explanation",
+          "urgency": "high",
+          "specific_target": "Partially Observable Markov Decision Processes (POMDP)",
+          "reasoning": "User is highly confused (0.85) but engaged (0.9) and showing clear struggle with POMDP concept through repeated highlighting. High cognitive load suggests need for clarification to prevent frustration despite recent intervention.",
+          "respect_reading_flow": false
+        }
+      },
+      {
+        "timestamp": "2025-06-20T00:58:24.577754",
+        "intervention": {
+          "should_intervene": true,
+          "intervention_type": "concept_explanation",
+          "urgency": "high",
+          "specific_target": "POMDP framework",
+          "reasoning": "User is at a natural break point (Table of Contents) with high confusion (0.8) and engagement (0.85), showing specific knowledge gaps (POMDP framework, agent processes), and has exhibited struggle behaviors (repeated pausing/highlighting). The time since last intervention (21.8s) provides space for timely help targeting their main area of difficulty.",
+          "respect_reading_flow": true
+        }
+      },
+      {
+        "timestamp": "2025-06-20T00:59:05.866227",
+        "intervention": {
+          "should_intervene": true,
+          "intervention_type": "concept_explanation",
+          "urgency": "medium",
+          "specific_target": "Partially Observable Markov Decision Processes (POMDP)",
+          "reasoning": "User is highly engaged but showing strong signs of confusion (0.75 confusion level, high cognitive load, highlighting complex concepts). The POMDP concept was explicitly highlighted and appears in their knowledge gaps and struggle concepts. While not at a natural break point, the user's actions indicate immediate need for conceptual clarification.",
+          "respect_reading_flow": false
+        }
+      },
+      {
+        "timestamp": "2025-06-20T00:59:43.423434",
+        "intervention": {
+          "should_intervene": true,
+          "intervention_type": "concept_explanation",
+          "urgency": "high",
+          "specific_target": "Table of Contents structure",
+          "reasoning": "User is highly confused (0.75) but engaged, showing struggle with the Table of Contents structure (highlighted in both potential_knowledge_gaps and struggle_concepts). The immediate need for clarification outweighs the short time since last intervention due to high confusion and pausing/rereading behavior.",
+          "respect_reading_flow": false
+        }
+      }
+    ]
+  }
+}

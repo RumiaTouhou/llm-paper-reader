@@ -1,0 +1,668 @@
+{
+  "session_id": "test_cb3063fc_20250620_062633",
+  "participant_id": "test_cb3063fc",
+  "mode": "testing",
+  "start_time": "2025-06-20T06:26:33.817251",
+  "end_time": "2025-06-20T06:50:24.762606",
+  "metrics": {
+    "total_reading_time": 1430.945355,
+    "sections_completed": 3,
+    "ai_interventions": 17,
+    "interventions_accepted": 0,
+    "interventions_rejected": 1,
+    "pauses_detected": 2,
+    "rereading_detected": 1
+  },
+  "interactions": [
+    {
+      "timestamp": "2025-06-20T06:26:46.608092",
+      "type": "user_behavior",
+      "data": {
+        "observation": "The user highlights the text: 'reinforcement learning'.",
+        "type": "selection",
+        "timestamp": 1750390006598,
+        "context": {
+          "section": "MARLUI: Multi-Agent Reinforcement Learning for Adaptive UIs",
+          "scrollPosition": 0,
+          "readingSpeed": null
+        }
+      }
+    },
+    {
+      "timestamp": "2025-06-20T06:26:49.765320",
+      "type": "user_behavior",
+      "data": {
+        "observation": "The user pauses at 'MARLUI: Multi-Agent Reinforcement Learning for Adaptive UIs' for 3 seconds.",
+        "type": "pause",
+        "timestamp": 1750390009452,
+        "context": {
+          "section": "MARLUI: Multi-Agent Reinforcement Learning for Adaptive UIs",
+          "scrollPosition": 0,
+          "readingSpeed": null
+        }
+      }
+    },
+    {
+      "timestamp": "2025-06-20T06:27:46.445273",
+      "type": "ai_response",
+      "data": {
+        "observation": "The user pauses at 'MARLUI: Multi-Agent Reinforcement Learning for Adaptive UIs' for 3 seconds.",
+        "response": "Multi-Agent Reinforcement Learning (MARL) extends traditional reinforcement learning by having multiple agents learn and adapt simultaneously in a shared environment. Each agent observes the environment, takes actions, and receives rewards, often requiring cooperation or competition with other agents. This is particularly useful for adaptive UIs where different interface components (agents) need to coordinate for optimal user experience."
+      }
+    },
+    {
+      "timestamp": "2025-06-20T06:27:47.032808",
+      "type": "user_behavior",
+      "data": {
+        "observation": "The user completes the 1 INTRODUCTION section after 2 seconds.",
+        "type": "section_complete",
+        "timestamp": 1750390067029,
+        "context": {
+          "section": "1 INTRODUCTION",
+          "scrollPosition": 2296,
+          "readingSpeed": 1024.7058823529412
+        }
+      }
+    },
+    {
+      "timestamp": "2025-06-20T06:28:35.339010",
+      "type": "ai_response",
+      "data": {
+        "observation": "The user completes the 1 INTRODUCTION section after 2 seconds.",
+        "response": "Great progress completing the introduction! This paper introduces Multi-Agent Reinforcement Learning (MARL) for creating Adaptive UIs. The next section will delve deeper into the MARL framework - feel free to ask if any concepts need clarification."
+      }
+    },
+    {
+      "timestamp": "2025-06-20T06:28:38.111946",
+      "type": "user_behavior",
+      "data": {
+        "observation": "The user returns to reading after 6 seconds.",
+        "type": "focus_return",
+        "timestamp": 1750390117798,
+        "context": {
+          "section": "2.2.1 Heuristics, Bayesian Networks \\& Combinatorial Optimization.",
+          "scrollPosition": 2607,
+          "readingSpeed": 0
+        }
+      }
+    },
+    {
+      "timestamp": "2025-06-20T06:29:25.207424",
+      "type": "ai_response",
+      "data": {
+        "observation": "The user returns to reading after 6 seconds.",
+        "response": "Welcome back! Since you've highlighted 'reinforcement learning', I want to check if you'd like a quick refresher. It's a machine learning approach where agents learn by interacting with an environment to maximize rewards (like how we learn from trial and error). Would you like me to elaborate?"
+      }
+    },
+    {
+      "timestamp": "2025-06-20T06:29:57.277604",
+      "type": "user_behavior",
+      "data": {
+        "observation": "The user returns to reading after 40 seconds.",
+        "type": "focus_return",
+        "timestamp": 1750390196968,
+        "context": {
+          "section": "2.1 Computational User Modelling",
+          "scrollPosition": 2300,
+          "readingSpeed": 0
+        }
+      }
+    },
+    {
+      "timestamp": "2025-06-20T06:30:41.535233",
+      "type": "ai_response",
+      "data": {
+        "observation": "The user returns to reading after 40 seconds.",
+        "response": "Let me quickly clarify reinforcement learning: It's a machine learning approach where an agent learns by receiving rewards/penalties for actions in an environment, like how we learn from consequences. Would you like a simple example to help understand it better?"
+      }
+    },
+    {
+      "timestamp": "2025-06-20T06:30:42.103884",
+      "type": "user_behavior",
+      "data": {
+        "observation": "The user pauses at '2.2.1 Heuristics, Bayesian Networks \\& Combinatorial Optimization.' for 3 seconds.",
+        "type": "pause",
+        "timestamp": 1750390242101,
+        "context": {
+          "section": "2.2.1 Heuristics, Bayesian Networks \\& Combinatorial Optimization.",
+          "scrollPosition": 2678,
+          "readingSpeed": 0
+        }
+      }
+    },
+    {
+      "timestamp": "2025-06-20T06:31:33.076300",
+      "type": "ai_response",
+      "data": {
+        "observation": "The user pauses at '2.2.1 Heuristics, Bayesian Networks \\& Combinatorial Optimization.' for 3 seconds.",
+        "response": "I notice you're struggling with some key concepts here. Let me briefly clarify: Heuristics are problem-solving shortcuts, Bayesian Networks show probabilistic relationships, and Combinatorial Optimization finds optimal solutions from finite sets. Would you like me to expand on any of these?"
+      }
+    },
+    {
+      "timestamp": "2025-06-20T06:31:33.803900",
+      "type": "user_behavior",
+      "data": {
+        "observation": "The user completes the MARLUI: Multi-Agent Reinforcement Learning for Adaptive UIs section after 1 seconds.",
+        "type": "section_complete",
+        "timestamp": 1750390293493,
+        "context": {
+          "section": "MARLUI: Multi-Agent Reinforcement Learning for Adaptive UIs",
+          "scrollPosition": 3240,
+          "readingSpeed": 128.13888133442117
+        }
+      }
+    },
+    {
+      "timestamp": "2025-06-20T06:32:20.316662",
+      "type": "user_behavior",
+      "data": {
+        "observation": "The user highlights the text: 'recommender systems'.",
+        "type": "selection",
+        "timestamp": 1750390340308,
+        "context": {
+          "section": "2.2.2 Supervised Learning.",
+          "scrollPosition": 3240,
+          "readingSpeed": 0
+        }
+      }
+    },
+    {
+      "timestamp": "2025-06-20T06:32:52.048894",
+      "type": "user_feedback",
+      "data": {
+        "helpful": false
+      }
+    },
+    {
+      "timestamp": "2025-06-20T06:32:58.016814",
+      "type": "user_behavior",
+      "data": {
+        "observation": "The user completes the 2.2.2 Supervised Learning. section after 57 seconds.",
+        "type": "section_complete",
+        "timestamp": 1750390377713,
+        "context": {
+          "section": "2.2.2 Supervised Learning.",
+          "scrollPosition": 2107,
+          "readingSpeed": 31.79433195716894
+        }
+      }
+    },
+    {
+      "timestamp": "2025-06-20T06:33:44.099208",
+      "type": "ai_response",
+      "data": {
+        "observation": "The user completes the 2.2.2 Supervised Learning. section after 57 seconds.",
+        "response": "Great job reaching the end of 2.2.2 Supervised Learning! Let's quickly recap: This section covered how supervised learning uses labeled training data to make predictions, with recommender systems being one practical application. You're doing well\u2014let's keep this momentum going!"
+      }
+    },
+    {
+      "timestamp": "2025-06-20T06:33:53.587202",
+      "type": "user_behavior",
+      "data": {
+        "observation": "The user highlights the text: 'multi-agent reinforcement learning'.",
+        "type": "selection",
+        "timestamp": 1750390433579,
+        "context": {
+          "section": "1 INTRODUCTION",
+          "scrollPosition": 743,
+          "readingSpeed": 0
+        }
+      }
+    },
+    {
+      "timestamp": "2025-06-20T06:34:38.074565",
+      "type": "ai_response",
+      "data": {
+        "observation": "The user highlights the text: 'multi-agent reinforcement learning'.",
+        "response": "Great job engaging with Section 2.2.2 on Supervised Learning! Since you've shown interest in multi-agent reinforcement learning earlier, would you like a quick summary of how supervised learning differs from MARL? This could help connect the concepts while giving your brain a quick break."
+      }
+    },
+    {
+      "timestamp": "2025-06-20T06:35:07.989658",
+      "type": "user_behavior",
+      "data": {
+        "observation": "The user highlights the text: 'decompose'.",
+        "type": "selection",
+        "timestamp": 1750390507666,
+        "context": {
+          "section": "1 INTRODUCTION",
+          "scrollPosition": 743,
+          "readingSpeed": 0
+        }
+      }
+    },
+    {
+      "timestamp": "2025-06-20T06:35:53.179130",
+      "type": "ai_response",
+      "data": {
+        "observation": "The user highlights the text: 'decompose'.",
+        "response": "Since you're reading about multi-agent reinforcement learning, let me clarify: MARL involves multiple agents learning to make decisions by interacting with an environment while decomposing breaks complex problems into simpler sub-tasks. This helps in scaling learning (see section 2.2.2). Would you like more details?"
+      }
+    },
+    {
+      "timestamp": "2025-06-20T06:35:58.552709",
+      "type": "user_behavior",
+      "data": {
+        "observation": "The user re-reads the content about 'We frame adapting UIs as a multi-agent reinforcement learning (MARL) problem to alleviate these chal'.",
+        "type": "reread",
+        "timestamp": 1750390558550,
+        "context": {
+          "section": "1 INTRODUCTION",
+          "scrollPosition": 1157,
+          "readingSpeed": 13.465570745617713
+        }
+      }
+    },
+    {
+      "timestamp": "2025-06-20T06:36:42.640513",
+      "type": "ai_response",
+      "data": {
+        "observation": "The user re-reads the content about 'We frame adapting UIs as a multi-agent reinforcement learning (MARL) problem to alleviate these chal'.",
+        "response": "MARL extends traditional reinforcement learning by coordinating multiple agents that learn concurrently, while 'decompose' means breaking complex problems into manageable sub-problems. This approach helps adapt UIs more effectively."
+      }
+    },
+    {
+      "timestamp": "2025-06-20T06:36:47.279471",
+      "type": "user_behavior",
+      "data": {
+        "observation": "The user returns to reading after 20 seconds.",
+        "type": "focus_return",
+        "timestamp": 1750390606970,
+        "context": {
+          "section": "2 RELATED WORK",
+          "scrollPosition": 1923,
+          "readingSpeed": 0
+        }
+      }
+    },
+    {
+      "timestamp": "2025-06-20T06:37:33.901793",
+      "type": "ai_response",
+      "data": {
+        "observation": "The user returns to reading after 20 seconds.",
+        "response": "Let me clarify MARL for you - it's when multiple AI agents learn simultaneously by interacting with an environment and each other. The 'decompose' part means breaking down complex UI adaptation tasks into simpler sub-tasks managed by different agents (as we'll see in Section 3). Would you like a quick example?"
+      }
+    },
+    {
+      "timestamp": "2025-06-20T06:38:29.119347",
+      "type": "user_behavior",
+      "data": {
+        "observation": "The user returns to reading after 97 seconds.",
+        "type": "focus_return",
+        "timestamp": 1750390708810,
+        "context": {
+          "section": "2 RELATED WORK",
+          "scrollPosition": 1923,
+          "readingSpeed": 0
+        }
+      }
+    },
+    {
+      "timestamp": "2025-06-20T06:39:16.998872",
+      "type": "ai_response",
+      "data": {
+        "observation": "The user returns to reading after 97 seconds.",
+        "response": "Let me quickly clarify MARL - it's when multiple AI agents learn simultaneously by interacting with an environment and each other. In UI adaptation, each UI component acts as an agent cooperating to optimize the interface. This differs from single-agent RL where only one learner exists (section 2.2.2)."
+      }
+    },
+    {
+      "timestamp": "2025-06-20T06:41:00.183872",
+      "type": "user_behavior",
+      "data": {
+        "observation": "The user returns to reading after 125 seconds.",
+        "type": "focus_return",
+        "timestamp": 1750390859874,
+        "context": {
+          "section": "2 RELATED WORK",
+          "scrollPosition": 1923,
+          "readingSpeed": 0
+        }
+      }
+    },
+    {
+      "timestamp": "2025-06-20T06:41:47.173071",
+      "type": "ai_response",
+      "data": {
+        "observation": "The user returns to reading after 125 seconds.",
+        "response": "Let me quickly clarify MARL and decomposition since they're key here. MARL involves multiple agents learning to collaborate/compete, while 'decompose' means breaking complex problems into smaller sub-tasks - both crucial for understanding adaptive UIs in this paper. Would you like a 1-minute visual to help solidify these concepts?"
+      }
+    },
+    {
+      "timestamp": "2025-06-20T06:42:37.109897",
+      "type": "user_behavior",
+      "data": {
+        "observation": "The user returns to reading after 96 seconds.",
+        "type": "focus_return",
+        "timestamp": 1750390956795,
+        "context": {
+          "section": "2 RELATED WORK",
+          "scrollPosition": 1923,
+          "readingSpeed": 0
+        }
+      }
+    },
+    {
+      "timestamp": "2025-06-20T06:43:25.088328",
+      "type": "ai_response",
+      "data": {
+        "observation": "The user returns to reading after 96 seconds.",
+        "response": "Let me help clarify MARL - it's when multiple AI agents learn by trial/error while adapting to each other. For UI adaptation, MARL agents work together to dynamically adjust interface elements based on user needs. Want me to explain problem framing in MARL next?"
+      }
+    },
+    {
+      "timestamp": "2025-06-20T06:43:25.924767",
+      "type": "user_behavior",
+      "data": {
+        "observation": "The user's attention leaves the document.",
+        "type": "focus_lost",
+        "timestamp": 1750391005923,
+        "context": {
+          "section": "2 RELATED WORK",
+          "scrollPosition": 1923,
+          "readingSpeed": 0
+        }
+      }
+    },
+    {
+      "timestamp": "2025-06-20T06:44:08.612875",
+      "type": "ai_response",
+      "data": {
+        "observation": "The user's attention leaves the document.",
+        "response": "This seems like a tough section - let's take a quick 5-minute break to clear your mind before continuing with MARL and UI adaptation concepts. A short pause might help you approach this with fresh eyes!"
+      }
+    },
+    {
+      "timestamp": "2025-06-20T06:46:52.748020",
+      "type": "user_behavior",
+      "data": {
+        "observation": "The user returns to reading after 163 seconds.",
+        "type": "focus_return",
+        "timestamp": 1750391212434,
+        "context": {
+          "section": "2 RELATED WORK",
+          "scrollPosition": 1923,
+          "readingSpeed": 0
+        }
+      }
+    },
+    {
+      "timestamp": "2025-06-20T06:47:35.265429",
+      "type": "ai_response",
+      "data": {
+        "observation": "The user returns to reading after 163 seconds.",
+        "response": "I notice you're struggling with Multi-Agent Reinforcement Learning (MARL) concepts. Let me briefly explain: MARL extends single-agent reinforcement learning by having multiple agents learn simultaneously in a shared environment, often requiring coordination strategies. Would you like me to explain any specific aspect in more detail?"
+      }
+    },
+    {
+      "timestamp": "2025-06-20T06:48:11.854195",
+      "type": "user_behavior",
+      "data": {
+        "observation": "The user returns to reading after 77 seconds.",
+        "type": "focus_return",
+        "timestamp": 1750391291545,
+        "context": {
+          "section": "2 RELATED WORK",
+          "scrollPosition": 1923,
+          "readingSpeed": 0
+        }
+      }
+    },
+    {
+      "timestamp": "2025-06-20T06:48:52.409206",
+      "type": "ai_response",
+      "data": {
+        "observation": "The user returns to reading after 77 seconds.",
+        "response": "I notice you're working with Multi-Agent Reinforcement Learning (MARL) - this is when multiple AI agents learn together by interacting with an environment and each other, adjusting their strategies based on rewards. Would you like me to clarify any specific aspects?"
+      }
+    },
+    {
+      "timestamp": "2025-06-20T06:49:41.400413",
+      "type": "user_behavior",
+      "data": {
+        "observation": "The user returns to reading after 88 seconds.",
+        "type": "focus_return",
+        "timestamp": 1750391381090,
+        "context": {
+          "section": "2 RELATED WORK",
+          "scrollPosition": 1923,
+          "readingSpeed": 0
+        }
+      }
+    },
+    {
+      "timestamp": "2025-06-20T06:50:24.761606",
+      "type": "ai_response",
+      "data": {
+        "observation": "The user returns to reading after 88 seconds.",
+        "response": "You seem a bit overwhelmed with these MARL concepts - let's take a quick 5-minute break to clear your mind before continuing. Short breaks actually improve learning retention!"
+      }
+    }
+  ],
+  "ai_memory": {
+    "user_state": {
+      "mood": "frustrated",
+      "confusion_level": 0.8,
+      "engagement_level": 0.3,
+      "skills": [],
+      "interests": [],
+      "current_topic": null,
+      "cognitive_load": "high",
+      "potential_knowledge_gaps": [
+        "multi-agent reinforcement learning (MARL)",
+        "UI adaptation",
+        "problem framing in MARL"
+      ],
+      "needs_help_probability": 0.85,
+      "at_natural_break": false
+    },
+    "paper_context": {
+      "title": "unknown",
+      "current_section": "unknown",
+      "sections_seen": [
+        "INTRODUCTION",
+        "1 INTRODUCTION",
+        "2.2.1 Heuristics, Bayesian Networks & Combinatorial Optimization",
+        "MARLUI: Multi-Agent Reinforcement Learning for Adaptive UIs",
+        "2.2.2 Supervised Learning",
+        "Unknown",
+        "unknown"
+      ]
+    },
+    "reading_metrics": {
+      "sections_completed": 6,
+      "total_reading_time": 933.6381673812866,
+      "average_time_per_section": 155.60636123021445,
+      "concepts_struggled": [],
+      "current_section": "unknown"
+    },
+    "intervention_history": [
+      {
+        "timestamp": "2025-06-20T06:27:46.445273",
+        "intervention": {
+          "should_intervene": true,
+          "intervention_type": "concept_explanation",
+          "urgency": "medium",
+          "specific_target": "Multi-Agent Reinforcement Learning",
+          "reasoning": "User is exhibiting curiosity with a medium confusion level (0.3) and has highlighted 'reinforcement learning', suggesting interest in understanding this concept before proceeding. Though not at a natural break point, the user's pausing behavior and presence of knowledge gaps indicate this would be a useful intervention to prevent future confusion.",
+          "respect_reading_flow": false
+        }
+      },
+      {
+        "timestamp": "2025-06-20T06:28:35.339010",
+        "intervention": {
+          "should_intervene": true,
+          "intervention_type": "section_transition",
+          "urgency": "low",
+          "specific_target": "INTRODUCTION section transition",
+          "reasoning": "The user is at a natural break point (section transition) with low confusion and high engagement. A brief intervention to summarize the introduction and set expectations for the next section would be helpful without disrupting flow.",
+          "respect_reading_flow": true
+        }
+      },
+      {
+        "timestamp": "2025-06-20T06:29:25.207424",
+        "intervention": {
+          "should_intervene": true,
+          "intervention_type": "concept_explanation",
+          "urgency": "medium",
+          "specific_target": "reinforcement learning",
+          "reasoning": "User has returned after a pause and has highlighted 'reinforcement learning', indicating a potential struggle with this foundational concept. The confusion level is moderate (0.4), and the user's engagement allows for a helpful intervention without disrupting flow too much. Addressing this early may prevent later confusion.",
+          "respect_reading_flow": true
+        }
+      },
+      {
+        "timestamp": "2025-06-20T06:30:41.535233",
+        "intervention": {
+          "should_intervene": true,
+          "intervention_type": "concept_explanation",
+          "urgency": "medium",
+          "specific_target": "reinforcement learning",
+          "reasoning": "User is engaged but showing confusion (0.6) with specific struggle around 'reinforcement learning', has paused multiple times, and spent considerable time on this concept with highlighting behavior. The user's needs_help_probability is high (0.7) and they're at a stable reading point (pausing but not between sections).",
+          "respect_reading_flow": true
+        }
+      },
+      {
+        "timestamp": "2025-06-20T06:31:33.076300",
+        "intervention": {
+          "should_intervene": true,
+          "intervention_type": "concept_explanation",
+          "urgency": "high",
+          "specific_target": "Heuristics, Bayesian Networks & Combinatorial Optimization",
+          "reasoning": "User is highly confused (0.8) and has high cognitive load. They're pausing at a technical subsection and have identified these exact concepts as potential knowledge gaps. Though not at a natural break, their confusion level and immediate struggle with these foundational concepts warrants intervention.",
+          "respect_reading_flow": false
+        }
+      },
+      {
+        "timestamp": "2025-06-20T06:33:44.099208",
+        "intervention": {
+          "should_intervene": true,
+          "intervention_type": "section_summary",
+          "urgency": "low",
+          "specific_target": "2.2.2 Supervised Learning",
+          "reasoning": "User is engaged and at a natural break point (section transition), making it a good time to reinforce learning without disrupting flow. While confusion is low, a brief summary will help solidify understanding of this section before moving forward, particularly since they highlighted 'recommender systems' indicating interest.",
+          "respect_reading_flow": true
+        }
+      },
+      {
+        "timestamp": "2025-06-20T06:34:38.074565",
+        "intervention": {
+          "should_intervene": true,
+          "intervention_type": "section_summary",
+          "urgency": "medium",
+          "specific_target": "2.2.2 Supervised Learning",
+          "reasoning": "User is at a natural break point (section transition) and has shown engagement with the content by highlighting 'multi-agent reinforcement learning'. A summary can reinforce learning and address potential knowledge gaps without disrupting flow.",
+          "respect_reading_flow": true
+        }
+      },
+      {
+        "timestamp": "2025-06-20T06:35:53.179130",
+        "intervention": {
+          "should_intervene": true,
+          "intervention_type": "concept_explanation",
+          "urgency": "medium",
+          "specific_target": "multi-agent reinforcement learning or decompose",
+          "reasoning": "User is engaged but has moderate confusion (0.4) and is highlighting potential knowledge gaps ('multi-agent reinforcement learning' and 'decompose'). The intervention is timely as the user just transitioned to a new section and there's been over 50 seconds since the last intervention, avoiding annoyance. Addressing these concepts now could enhance understanding moving forward.",
+          "respect_reading_flow": true
+        }
+      },
+      {
+        "timestamp": "2025-06-20T06:36:42.640513",
+        "intervention": {
+          "should_intervene": true,
+          "intervention_type": "concept_explanation",
+          "urgency": "medium",
+          "specific_target": "multi-agent reinforcement learning (MARL) and decompose",
+          "reasoning": "User is engaged but showing signs of confusion (0.5 confusion level) via highlighting and re-reading, particularly around MARL and 'decompose'. These concepts seem foundational to the current content. While not at a natural break, addressing this now could prevent compounding confusion.",
+          "respect_reading_flow": false
+        }
+      },
+      {
+        "timestamp": "2025-06-20T06:37:33.901793",
+        "intervention": {
+          "should_intervene": true,
+          "intervention_type": "concept_explanation",
+          "urgency": "high",
+          "specific_target": "multi-agent reinforcement learning (MARL)",
+          "reasoning": "User shows high confusion (0.7) specifically around MARL and 'decompose', engagement remains high (0.9), cognitive load is high, and they've demonstrated struggle through highlighting and re-reading over an extended period. The probability they need help is high (0.75), and it's better to address this confusion now to prevent further difficulties in understanding.",
+          "respect_reading_flow": false
+        }
+      },
+      {
+        "timestamp": "2025-06-20T06:39:16.998872",
+        "intervention": {
+          "should_intervene": true,
+          "intervention_type": "concept_explanation",
+          "urgency": "high",
+          "specific_target": "multi-agent reinforcement learning (MARL)",
+          "reasoning": "User shows high confusion (0.8) with specific struggles around MARL and decomposition, engaged but struggling (pausing, re-reading). High cognitive load indicates need for clarification. Recent highlighting of these terms suggests immediate need. High needs_help_probability (0.85) justifies intervention even without natural break.",
+          "respect_reading_flow": false
+        }
+      },
+      {
+        "timestamp": "2025-06-20T06:41:47.173071",
+        "intervention": {
+          "should_intervene": true,
+          "intervention_type": "concept_explanation",
+          "urgency": "high",
+          "specific_target": "multi-agent reinforcement learning (MARL) and decompose",
+          "reasoning": "User shows high confusion (0.9) with visible struggle through re-reading and pausing after highlighting. They are engaging deeply (engagement 0.8) but with high cognitive load. MARL and 'decompose' are flagged as knowledge gaps\u2014key to understanding current section. While not at a natural break, immediate concept support is justified due to their active struggle.",
+          "respect_reading_flow": false
+        }
+      },
+      {
+        "timestamp": "2025-06-20T06:43:25.088328",
+        "intervention": {
+          "should_intervene": true,
+          "intervention_type": "concept_explanation",
+          "urgency": "high",
+          "specific_target": "multi-agent reinforcement learning (MARL) and UI adaptation",
+          "reasoning": "User shows high confusion (0.95) and frustration, with cognitive load at 'high'. They have been re-reading and pausing extensively in this section, indicating strong struggle with the MARL and UI adaptation concepts. Though not at a natural break point, the level of struggle justifies immediate intervention.",
+          "respect_reading_flow": false
+        }
+      },
+      {
+        "timestamp": "2025-06-20T06:44:08.612875",
+        "intervention": {
+          "should_intervene": true,
+          "intervention_type": "break_suggestion",
+          "urgency": "high",
+          "specific_target": "current reading session",
+          "reasoning": "User shows high frustration (mood=frustrated) and confusion (0.9) with high cognitive load, and is exhibiting struggle behaviors (frequent pauses, attention leaving document). While not at a natural break point, the immediate distress suggests an urgent need to step away",
+          "respect_reading_flow": false
+        }
+      },
+      {
+        "timestamp": "2025-06-20T06:47:35.265429",
+        "intervention": {
+          "should_intervene": true,
+          "intervention_type": "concept_explanation",
+          "urgency": "high",
+          "specific_target": "multi-agent reinforcement learning (MARL)",
+          "reasoning": "User shows high frustration (mood: frustrated) and confusion (0.9) with probable knowledge gaps in MARL concepts. While not at a natural break point, cognitive load is high and user is pausing frequently, indicating immediate need for clarification on core concepts to prevent disengagement.",
+          "respect_reading_flow": false
+        }
+      },
+      {
+        "timestamp": "2025-06-20T06:48:52.409206",
+        "intervention": {
+          "should_intervene": true,
+          "intervention_type": "concept_explanation",
+          "urgency": "high",
+          "specific_target": "multi-agent reinforcement learning (MARL)",
+          "reasoning": "User shows high frustration (0.85), high likelihood of needing help (0.9), high cognitive load, and probable knowledge gaps in MARL. Despite not being at a natural break, the high confusion and frustration justify immediate intervention to prevent disengagement.",
+          "respect_reading_flow": false
+        }
+      },
+      {
+        "timestamp": "2025-06-20T06:50:24.761606",
+        "intervention": {
+          "should_intervene": true,
+          "intervention_type": "break_suggestion",
+          "urgency": "high",
+          "specific_target": "current frustration and cognitive load",
+          "reasoning": "User shows high frustration, high confusion, low engagement and high cognitive load. A break would help reset mental state before tackling complex MARL concepts. The high needs_help_probability (0.85) and pausing behavior further support this intervention.",
+          "respect_reading_flow": true
+        }
+      }
+    ]
+  }
+}

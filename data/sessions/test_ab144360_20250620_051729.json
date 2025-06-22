@@ -1,0 +1,132 @@
+{
+  "session_id": "test_ab144360_20250620_051729",
+  "participant_id": "test_ab144360",
+  "mode": "testing",
+  "start_time": "2025-06-20T05:17:29.545136",
+  "end_time": "2025-06-20T05:34:28.784745",
+  "metrics": {
+    "total_reading_time": 1019.239609,
+    "sections_completed": 2,
+    "ai_interventions": 2,
+    "interventions_accepted": 0,
+    "interventions_rejected": 0,
+    "pauses_detected": 0,
+    "rereading_detected": 0
+  },
+  "interactions": [
+    {
+      "timestamp": "2025-06-20T05:17:36.974111",
+      "type": "user_behavior",
+      "data": {
+        "observation": "The user completes the MARLUI: Multi-Agent Reinforcement Learning for Adaptive UIs section after 6 seconds.",
+        "type": "section_complete",
+        "timestamp": 1750385856967,
+        "context": {
+          "section": "MARLUI: Multi-Agent Reinforcement Learning for Adaptive UIs",
+          "scrollPosition": 700,
+          "readingSpeed": 348.0278422273782
+        }
+      }
+    },
+    {
+      "timestamp": "2025-06-20T05:18:20.158969",
+      "type": "user_behavior",
+      "data": {
+        "observation": "The user completes the 1 INTRODUCTION section after 43 seconds.",
+        "type": "section_complete",
+        "timestamp": 1750385899847,
+        "context": {
+          "section": "1 INTRODUCTION",
+          "scrollPosition": 2000,
+          "readingSpeed": 133.84321223709367
+        }
+      }
+    },
+    {
+      "timestamp": "2025-06-20T05:18:55.655158",
+      "type": "ai_response",
+      "data": {
+        "observation": "The user completes the 1 INTRODUCTION section after 43 seconds.",
+        "response": "Let me quickly recap the key points from the Introduction section: This paper focuses on using multi-agent reinforcement learning to create adaptive user interfaces. Would you like me to clarify anything before you continue?"
+      }
+    },
+    {
+      "timestamp": "2025-06-20T05:19:06.586555",
+      "type": "user_behavior",
+      "data": {
+        "observation": "The user highlights the text: 'Reinforcement learning is a natural approach to solving the AUI problem, as its underlying decision-'.",
+        "type": "selection",
+        "timestamp": 1750385946578,
+        "context": {
+          "section": "2.2.2 Supervised Learning.",
+          "scrollPosition": 3300,
+          "readingSpeed": 0
+        }
+      }
+    },
+    {
+      "timestamp": "2025-06-20T05:19:52.004322",
+      "type": "ai_response",
+      "data": {
+        "observation": "The user highlights the text: 'Reinforcement learning is a natural approach to solving the AUI problem, as its underlying decision-'.",
+        "response": "Reinforcement learning (RL) is particularly suitable for Adaptive UI problems because it learns optimal actions through trial-and-error interactions with users (see Section 1). Would you like a quick analogy to clarify how RL applies here?"
+      }
+    }
+  ],
+  "ai_memory": {
+    "user_state": {
+      "mood": "engaged",
+      "confusion_level": 0.3,
+      "engagement_level": 0.7,
+      "skills": [],
+      "interests": [],
+      "current_topic": null,
+      "cognitive_load": "medium",
+      "potential_knowledge_gaps": [
+        "Reinforcement learning as an approach to solving the AUI problem"
+      ],
+      "needs_help_probability": 0.2,
+      "at_natural_break": false
+    },
+    "paper_context": {
+      "title": "MARLUI: Multi-Agent Reinforcement Learning for Adaptive UIs",
+      "current_section": "1 INTRODUCTION",
+      "sections_seen": [
+        "MARLUI: Multi-Agent Reinforcement Learning for Adaptive UIs",
+        "INTRODUCTION",
+        "1 INTRODUCTION"
+      ]
+    },
+    "reading_metrics": {
+      "sections_completed": 2,
+      "total_reading_time": 91.93158197402954,
+      "average_time_per_section": 45.96579098701477,
+      "concepts_struggled": [],
+      "current_section": "1 INTRODUCTION"
+    },
+    "intervention_history": [
+      {
+        "timestamp": "2025-06-20T05:18:55.655158",
+        "intervention": {
+          "should_intervene": true,
+          "intervention_type": "section_summary",
+          "urgency": "low",
+          "specific_target": "INTRODUCTION",
+          "reasoning": "User is at a natural break (section transition) with low cognitive load and no confusion, but engagement is moderate (0.6). A brief section summary could reinforce key points and potentially boost engagement without disruption.",
+          "respect_reading_flow": true
+        }
+      },
+      {
+        "timestamp": "2025-06-20T05:19:52.004322",
+        "intervention": {
+          "should_intervene": true,
+          "intervention_type": "concept_explanation",
+          "urgency": "medium",
+          "specific_target": "Reinforcement learning as an approach to solving the AUI problem",
+          "reasoning": "User is engaged but shows potential knowledge gaps and has been highlighting concepts related to reinforcement learning. While the confusion level is moderate (0.3), the user's pause and highlighting behavior indicate a need for clarification on this key concept early in the paper.",
+          "respect_reading_flow": true
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,199 @@
+{
+  "pre_test": [
+    {
+      "id": "pre1",
+      "question": "What is your familiarity with Large Language Models (LLMs) like GPT or Claude?",
+      "type": "scale",
+      "options": [
+        "No knowledge - I've never heard of them",
+        "Basic understanding - I know what they are but haven't used them much",
+        "Moderate knowledge - I use them occasionally",
+        "Advanced knowledge - I use them regularly",
+        "Expert - I work with them professionally"
+      ]
+    },
+    {
+      "id": "pre2",
+      "question": "Have you read research papers about AI, machine learning, or natural language processing before?",
+      "type": "scale",
+      "options": [
+        "Never",
+        "Once or twice",
+        "Occasionally (few times a year)",
+        "Regularly (monthly)",
+        "Frequently (weekly or more)"
+      ]
+    },
+    {
+      "id": "pre3",
+      "question": "How comfortable are you with reading academic papers in general?",
+      "type": "scale",
+      "options": [
+        "Very uncomfortable - I find them very difficult",
+        "Somewhat uncomfortable - I struggle with them",
+        "Neutral - I can manage with effort",
+        "Somewhat comfortable - I read them without major issues",
+        "Very comfortable - I find them easy to read"
+      ]
+    },
+    {
+      "id": "pre4",
+      "question": "Have you ever used any reading assistance tools (e.g., citation managers, annotation tools, AI assistants)?",
+      "type": "yes_no"
+    },
+    {
+      "id": "pre5",
+      "question": "What typically challenges you most when reading research papers? (Optional)",
+      "type": "open_ended"
+    }
+  ],
+  "post_test": [
+    {
+      "id": "post1",
+      "question": "According to the paper, what is the main metaphor used to understand LLM-based dialogue agents?",
+      "type": "multiple_choice",
+      "options": [
+        "Computer programs following strict rules",
+        "Actors role-playing different characters",
+        "Databases retrieving stored information",
+        "Neural networks processing patterns"
+      ],
+      "correct": 1
+    },
+    {
+      "id": "post2",
+      "question": "What does the paper mean by 'simulacra' in the context of LLMs?",
+      "type": "multiple_choice",
+      "options": [
+        "The training data used for the model",
+        "The neural network architecture",
+        "Characters or entities that the LLM can simulate",
+        "Errors in the model's output"
+      ],
+      "correct": 2
+    },
+    {
+      "id": "post3",
+      "question": "According to the paper, why should we avoid anthropomorphizing AI systems?",
+      "type": "multiple_choice",
+      "options": [
+        "It makes the AI less efficient",
+        "It obscures the fundamental differences between AI and humans",
+        "It violates copyright laws",
+        "It makes the AI more expensive to run"
+      ],
+      "correct": 1
+    },
+    {
+      "id": "post4",
+      "question": "What does the paper say about an LLM's ability to deceive?",
+      "type": "multiple_choice",
+      "options": [
+        "LLMs can deliberately lie like humans do",
+        "LLMs cannot produce false information",
+        "LLMs can role-play deceptive characters without having actual intent to deceive",
+        "LLMs always tell the truth based on their training"
+      ],
+      "correct": 2
+    },
+    {
+      "id": "post5",
+      "question": "What is the paper's stance on dialogue agents expressing self-preservation instincts?",
+      "type": "multiple_choice",
+      "options": [
+        "They genuinely fear being turned off",
+        "They are role-playing characters that have self-preservation instincts",
+        "They cannot express such concepts",
+        "They should be programmed to avoid such expressions"
+      ],
+      "correct": 1
+    },
+    {
+      "id": "post6",
+      "question": "In your own words, explain the key difference between the 'simulator' and the 'simulacra' as described in the paper.",
+      "type": "open_ended"
+    },
+    {
+      "id": "post7",
+      "question": "What potential dangers does the paper highlight regarding AI systems that can role-play?",
+      "type": "open_ended"
+    }
+  ],
+  "satisfaction": [
+    {
+      "id": "sat1",
+      "question": "How helpful was the AI assistant while reading the paper?",
+      "type": "scale",
+      "options": [
+        "Not helpful at all",
+        "Slightly helpful",
+        "Moderately helpful",
+        "Very helpful",
+        "Extremely helpful"
+      ]
+    },
+    {
+      "id": "sat2",
+      "question": "How often did the AI assistant interrupt your reading flow?",
+      "type": "scale",
+      "options": [
+        "Never - perfect timing",
+        "Rarely - mostly good timing",
+        "Sometimes - could be better",
+        "Often - too frequent",
+        "Constantly - very disruptive"
+      ]
+    },
+    {
+      "id": "sat3",
+      "question": "How relevant were the AI assistant's suggestions to your needs?",
+      "type": "scale",
+      "options": [
+        "Not relevant at all",
+        "Slightly relevant",
+        "Moderately relevant",
+        "Very relevant",
+        "Extremely relevant"
+      ]
+    },
+    {
+      "id": "sat4",
+      "question": "Would you use this AI reading assistant for future papers?",
+      "type": "scale",
+      "options": [
+        "Definitely not",
+        "Probably not",
+        "Maybe",
+        "Probably yes",
+        "Definitely yes"
+      ]
+    },
+    {
+      "id": "sat5",
+      "question": "How did the AI assistant affect your understanding of the paper?",
+      "type": "scale",
+      "options": [
+        "Made it much harder to understand",
+        "Made it slightly harder",
+        "No effect",
+        "Improved understanding slightly",
+        "Improved understanding significantly"
+      ]
+    },
+    {
+      "id": "sat6",
+      "question": "What did you like most about the AI assistant? (Please be specific)",
+      "type": "open_ended"
+    },
+    {
+      "id": "sat7",
+      "question": "What aspects of the AI assistant could be improved? (Please be specific)",
+      "type": "open_ended"
+    },
+    {
+      "id": "sat8",
+      "question": "Describe a specific moment where the AI assistant was particularly helpful or unhelpful.",
+      "type": "open_ended"
+    }
+  ]
+}

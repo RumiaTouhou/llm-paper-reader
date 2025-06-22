@@ -1,0 +1,132 @@
+{
+  "session_id": "test_9b3b5991_20250620_053439",
+  "participant_id": "test_9b3b5991",
+  "mode": "testing",
+  "start_time": "2025-06-20T05:34:39.645386",
+  "end_time": "2025-06-20T05:54:35.421433",
+  "metrics": {
+    "total_reading_time": 1195.776047,
+    "sections_completed": 2,
+    "ai_interventions": 2,
+    "interventions_accepted": 0,
+    "interventions_rejected": 0,
+    "pauses_detected": 0,
+    "rereading_detected": 0
+  },
+  "interactions": [
+    {
+      "timestamp": "2025-06-20T05:34:45.477465",
+      "type": "user_behavior",
+      "data": {
+        "observation": "The user completes the MARLUI: Multi-Agent Reinforcement Learning for Adaptive UIs section after 4 seconds.",
+        "type": "section_complete",
+        "timestamp": 1750386885470,
+        "context": {
+          "section": "MARLUI: Multi-Agent Reinforcement Learning for Adaptive UIs",
+          "scrollPosition": 600,
+          "readingSpeed": 218.1818181818182
+        }
+      }
+    },
+    {
+      "timestamp": "2025-06-20T05:35:18.915655",
+      "type": "user_behavior",
+      "data": {
+        "observation": "The user completes the 1 INTRODUCTION section after 33 seconds.",
+        "type": "section_complete",
+        "timestamp": 1750386918601,
+        "context": {
+          "section": "1 INTRODUCTION",
+          "scrollPosition": 2100,
+          "readingSpeed": 83.57441337190615
+        }
+      }
+    },
+    {
+      "timestamp": "2025-06-20T05:35:53.962343",
+      "type": "ai_response",
+      "data": {
+        "observation": "The user completes the 1 INTRODUCTION section after 33 seconds.",
+        "response": "Great job finishing the Introduction! This section introduced MARLUI, a multi-agent reinforcement learning approach for creating adaptive user interfaces. Would you like a quick recap before moving forward?"
+      }
+    },
+    {
+      "timestamp": "2025-06-20T05:35:58.453020",
+      "type": "user_behavior",
+      "data": {
+        "observation": "The user highlights the text: 'exploitation'.",
+        "type": "selection",
+        "timestamp": 1750386958445,
+        "context": {
+          "section": "2.2.2 Supervised Learning.",
+          "scrollPosition": 3100,
+          "readingSpeed": 0
+        }
+      }
+    },
+    {
+      "timestamp": "2025-06-20T05:36:39.369194",
+      "type": "ai_response",
+      "data": {
+        "observation": "The user highlights the text: 'exploitation'.",
+        "response": "Let me clarify 'exploitation' in this context - it refers to the strategy where agents focus on known optimal actions rather than exploring new possibilities. This balances immediate rewards against long-term learning. Would you like me to elaborate?"
+      }
+    }
+  ],
+  "ai_memory": {
+    "user_state": {
+      "mood": "engaged",
+      "confusion_level": 0.4,
+      "engagement_level": 0.8,
+      "skills": [],
+      "interests": [],
+      "current_topic": null,
+      "cognitive_load": "medium",
+      "potential_knowledge_gaps": [
+        "exploitation"
+      ],
+      "needs_help_probability": 0.3,
+      "at_natural_break": false
+    },
+    "paper_context": {
+      "title": "MARLUI: Multi-Agent Reinforcement Learning for Adaptive UIs",
+      "current_section": "unknown (likely within or after the INTRODUCTION section)",
+      "sections_seen": [
+        "MARLUI: Multi-Agent Reinforcement Learning for Adaptive UIs",
+        "INTRODUCTION",
+        "unknown (likely within or after the INTRODUCTION section)"
+      ]
+    },
+    "reading_metrics": {
+      "sections_completed": 2,
+      "total_reading_time": 72.60447788238525,
+      "average_time_per_section": 36.30223894119263,
+      "concepts_struggled": [],
+      "current_section": "unknown (likely within or after the INTRODUCTION section)"
+    },
+    "intervention_history": [
+      {
+        "timestamp": "2025-06-20T05:35:53.962343",
+        "intervention": {
+          "should_intervene": true,
+          "intervention_type": "section_summary",
+          "urgency": "low",
+          "specific_target": "INTRODUCTION",
+          "reasoning": "User is at a natural break point (section transition) with no confusion but moderate engagement. Providing a summary can reinforce understanding and help transition to the next section.",
+          "respect_reading_flow": true
+        }
+      },
+      {
+        "timestamp": "2025-06-20T05:36:39.369194",
+        "intervention": {
+          "should_intervene": true,
+          "intervention_type": "concept_explanation",
+          "urgency": "medium",
+          "specific_target": "exploitation",
+          "reasoning": "User is engaged but showing signs of confusion (highlighting, rereading) with the concept of 'exploitation', which appears in their potential knowledge gaps and struggle concepts. The intervention is timely as it's been nearly 30 seconds since the last interaction and they're demonstrating active engagement with the material.",
+          "respect_reading_flow": true
+        }
+      }
+    ]
+  }
+}

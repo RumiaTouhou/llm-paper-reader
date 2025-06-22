@@ -1,0 +1,249 @@
+{
+  "session_id": "test_47dbb24f_20250620_023228",
+  "participant_id": "test_47dbb24f",
+  "mode": "testing",
+  "start_time": "2025-06-20T02:32:28.188124",
+  "end_time": "2025-06-20T02:37:14.076612",
+  "metrics": {
+    "total_reading_time": 285.888488,
+    "sections_completed": 0,
+    "ai_interventions": 6,
+    "interventions_accepted": 0,
+    "interventions_rejected": 0,
+    "pauses_detected": 0,
+    "rereading_detected": 6
+  },
+  "interactions": [
+    {
+      "timestamp": "2025-06-20T02:32:46.979843",
+      "type": "user_behavior",
+      "data": {
+        "observation": "The user re-reads the content about 'MARLUI: Multi-Agent Reinforcement Learning for Adaptive UIs'.",
+        "type": "reread",
+        "timestamp": 1750375966974,
+        "context": {
+          "section": "MARLUI: Multi-Agent Reinforcement Learning for Adaptive UIs",
+          "scrollPosition": 0,
+          "readingSpeed": 40.644361833952914
+        }
+      }
+    },
+    {
+      "timestamp": "2025-06-20T02:33:26.528410",
+      "type": "ai_response",
+      "data": {
+        "observation": "The user re-reads the content about 'MARLUI: Multi-Agent Reinforcement Learning for Adaptive UIs'.",
+        "response": "MARLUI combines Multi-Agent Reinforcement Learning (where multiple AI agents learn through trial-and-error) with Adaptive UIs (interfaces that adjust based on user needs). Would you like a quick example of how this works in practice?"
+      }
+    },
+    {
+      "timestamp": "2025-06-20T02:33:26.529400",
+      "type": "user_behavior",
+      "data": {
+        "observation": "The user re-reads the content about 'MARLUI: Multi-Agent Reinforcement Learning for Adaptive UIs'.",
+        "type": "reread",
+        "timestamp": 1750375968563,
+        "context": {
+          "section": "MARLUI: Multi-Agent Reinforcement Learning for Adaptive UIs",
+          "scrollPosition": 7,
+          "readingSpeed": 33.06285575875015
+        }
+      }
+    },
+    {
+      "timestamp": "2025-06-20T02:34:16.102760",
+      "type": "ai_response",
+      "data": {
+        "observation": "The user re-reads the content about 'MARLUI: Multi-Agent Reinforcement Learning for Adaptive UIs'.",
+        "response": "Let me help clarify MARLUI for you! It's a system where multiple AI agents (Multi-Agent RL) learn together to automatically adapt user interfaces (Adaptive UIs) based on user behavior. Think of it like having a team of digital assistants that continuously optimize layouts, menus or features to improve your experience. Would you like me to break down either the Multi-Agent RL or Adaptive UI components in more detail?"
+      }
+    },
+    {
+      "timestamp": "2025-06-20T02:34:16.103772",
+      "type": "user_behavior",
+      "data": {
+        "observation": "The user re-reads the content about 'MARLUI: Multi-Agent Reinforcement Learning for Adaptive UIs'.",
+        "type": "reread",
+        "timestamp": 1750375970625,
+        "context": {
+          "section": "MARLUI: Multi-Agent Reinforcement Learning for Adaptive UIs",
+          "scrollPosition": 9,
+          "readingSpeed": 25.181228538725676
+        }
+      }
+    },
+    {
+      "timestamp": "2025-06-20T02:35:00.347321",
+      "type": "ai_response",
+      "data": {
+        "observation": "The user re-reads the content about 'MARLUI: Multi-Agent Reinforcement Learning for Adaptive UIs'.",
+        "response": "Let me explain MARLUI simply: It's a system where multiple AI agents (multi-agent RL) work together to automatically adjust user interfaces (adaptive UIs) based on user needs. Think of it like a team of digital assistants constantly optimizing your app's layout for you. Would you like a deeper breakdown of the components?"
+      }
+    },
+    {
+      "timestamp": "2025-06-20T02:35:00.347321",
+      "type": "user_behavior",
+      "data": {
+        "observation": "The user re-reads the content about 'MARLUI: Multi-Agent Reinforcement Learning for Adaptive UIs'.",
+        "type": "reread",
+        "timestamp": 1750375970744,
+        "context": {
+          "section": "MARLUI: Multi-Agent Reinforcement Learning for Adaptive UIs",
+          "scrollPosition": 10,
+          "readingSpeed": 25.10937797222751
+        }
+      }
+    },
+    {
+      "timestamp": "2025-06-20T02:35:42.902522",
+      "type": "ai_response",
+      "data": {
+        "observation": "The user re-reads the content about 'MARLUI: Multi-Agent Reinforcement Learning for Adaptive UIs'.",
+        "response": "Let me quickly explain how Multi-Agent Reinforcement Learning (MARL) works with Adaptive UIs. MARLUI uses multiple software 'agents' that learn through trial-and-error to collectively optimize the UI for each user. Think of these agents as team members constantly adapting interface elements based on user behavior."
+      }
+    },
+    {
+      "timestamp": "2025-06-20T02:35:42.903836",
+      "type": "user_behavior",
+      "data": {
+        "observation": "The user re-reads the content about 'MARLUI: Multi-Agent Reinforcement Learning for Adaptive UIs'.",
+        "type": "reread",
+        "timestamp": 1750375971008,
+        "context": {
+          "section": "MARLUI: Multi-Agent Reinforcement Learning for Adaptive UIs",
+          "scrollPosition": 13,
+          "readingSpeed": 3.2226078334159642
+        }
+      }
+    },
+    {
+      "timestamp": "2025-06-20T02:36:24.983033",
+      "type": "ai_response",
+      "data": {
+        "observation": "The user re-reads the content about 'MARLUI: Multi-Agent Reinforcement Learning for Adaptive UIs'.",
+        "response": "Let me help clarify Multi-Agent Reinforcement Learning (MARL) and Adaptive UIs. MARL involves multiple AI agents learning to collaborate, while Adaptive UIs adjust based on user behavior. MARLUI combines these by having agents optimize UI elements together - we can explore examples if helpful!"
+      }
+    },
+    {
+      "timestamp": "2025-06-20T02:36:27.257202",
+      "type": "user_behavior",
+      "data": {
+        "observation": "The user re-reads the content about 'MARLUI: Multi-Agent Reinforcement Learning for Adaptive UIs'.",
+        "type": "reread",
+        "timestamp": 1750375971744,
+        "context": {
+          "section": "MARLUI: Multi-Agent Reinforcement Learning for Adaptive UIs",
+          "scrollPosition": 23,
+          "readingSpeed": 5.031446540880503
+        }
+      }
+    },
+    {
+      "timestamp": "2025-06-20T02:37:14.075613",
+      "type": "ai_response",
+      "data": {
+        "observation": "The user re-reads the content about 'MARLUI: Multi-Agent Reinforcement Learning for Adaptive UIs'.",
+        "response": "Let me clarify MARLUI for you: It combines Multi-Agent Reinforcement Learning (where multiple AI agents learn through trial-and-error interactions) with Adaptive UIs (interfaces that change based on user needs). The key idea is having multiple AI agents collaboratively learn how to best adapt a user interface to individual users. Would you like me to explain either of these core components in more detail?"
+      }
+    }
+  ],
+  "ai_memory": {
+    "user_state": {
+      "mood": "frustrated",
+      "confusion_level": 0.95,
+      "engagement_level": 0.9,
+      "skills": [],
+      "interests": [],
+      "current_topic": null,
+      "cognitive_load": "high",
+      "potential_knowledge_gaps": [
+        "Multi-Agent Reinforcement Learning",
+        "Adaptive UIs",
+        "how MARLUI combines these concepts",
+        "specific applications of MARLUI"
+      ],
+      "needs_help_probability": 0.97,
+      "at_natural_break": false
+    },
+    "paper_context": {
+      "title": "MARLUI: Multi-Agent Reinforcement Learning for Adaptive UIs",
+      "current_section": null,
+      "sections_seen": []
+    },
+    "reading_metrics": {
+      "sections_completed": 0,
+      "total_reading_time": 0,
+      "average_time_per_section": 0,
+      "concepts_struggled": [],
+      "current_section": null
+    },
+    "intervention_history": [
+      {
+        "timestamp": "2025-06-20T02:33:26.528410",
+        "intervention": {
+          "should_intervene": true,
+          "intervention_type": "concept_explanation",
+          "urgency": "medium",
+          "specific_target": "Multi-Agent Reinforcement Learning for Adaptive UIs",
+          "reasoning": "User is engaged but showing signs of confusion (re-reading, confusion_level 0.6) around the core concept of MARLUI. Since this is a foundational concept for the paper, explaining it now would help build understanding before proceeding further.",
+          "respect_reading_flow": true
+        }
+      },
+      {
+        "timestamp": "2025-06-20T02:34:16.102760",
+        "intervention": {
+          "should_intervene": true,
+          "intervention_type": "concept_explanation",
+          "urgency": "high",
+          "specific_target": "MARLUI: Multi-Agent Reinforcement Learning for Adaptive UIs",
+          "reasoning": "User is highly confused (0.8) despite high engagement (0.9) and is re-reading material. They have explicit knowledge gaps in Multi-Agent Reinforcement Learning and how it combines with Adaptive UIs. The user's need for help probability is very high (0.85), and while they're not at a natural break point, the cognitive load justifies intervention.",
+          "respect_reading_flow": false
+        }
+      },
+      {
+        "timestamp": "2025-06-20T02:35:00.347321",
+        "intervention": {
+          "should_intervene": true,
+          "intervention_type": "concept_explanation",
+          "urgency": "high",
+          "specific_target": "MARLUI: Multi-Agent Reinforcement Learning for Adaptive UIs",
+          "reasoning": "User shows high confusion (0.85) and engagement (0.9), with clear knowledge gaps in MARLUI and its components. They are re-reading (a strong confusion indicator) with high cognitive load. Immediate concept clarification is needed to prevent frustration and maintain engagement.",
+          "respect_reading_flow": false
+        }
+      },
+      {
+        "timestamp": "2025-06-20T02:35:42.902522",
+        "intervention": {
+          "should_intervene": true,
+          "intervention_type": "concept_explanation",
+          "urgency": "high",
+          "specific_target": "Multi-Agent Reinforcement Learning and how it relates to Adaptive UIs",
+          "reasoning": "User is showing high confusion (0.9) with multiple re-reads and cognitive overload. They specifically struggle with how MARL combines these concepts, which is fundamental to understanding the paper. Immediate intervention is needed to prevent frustration despite not being at a natural break point.",
+          "respect_reading_flow": false
+        }
+      },
+      {
+        "timestamp": "2025-06-20T02:36:24.983033",
+        "intervention": {
+          "should_intervene": true,
+          "intervention_type": "concept_explanation",
+          "urgency": "high",
+          "specific_target": "Multi-Agent Reinforcement Learning (MARL) and its application to Adaptive UIs",
+          "reasoning": "User shows high confusion (0.9) and engagement (0.95) with multiple re-reads and high cognitive load on MARLUI concept. The need for intervention is urgent to prevent frustration and clarify foundational concepts before proceeding.",
+          "respect_reading_flow": false
+        }
+      },
+      {
+        "timestamp": "2025-06-20T02:37:14.075613",
+        "intervention": {
+          "should_intervene": true,
+          "intervention_type": "concept_explanation",
+          "urgency": "high",
+          "specific_target": "MARLUI concept and how it combines Multi-Agent Reinforcement Learning with Adaptive UIs",
+          "reasoning": "User shows high confusion (0.95) and frustration with prolonged focus and re-reading, indicating deep conceptual struggle. The high cognitive load and strong need for help (0.97) suggest immediate intervention is better than waiting for a natural break.",
+          "respect_reading_flow": false
+        }
+      }
+    ]
+  }
+}

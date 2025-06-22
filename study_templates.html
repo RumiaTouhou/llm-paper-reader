@@ -1,0 +1,355 @@
+<!-- Study Templates - Contains all HTML templates for the empirical study -->
+
+<!-- TEMPLATE: intro -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research Study - Introduction</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #333;
+            border-bottom: 2px solid #2196F3;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #555;
+            margin-top: 30px;
+        }
+        .info-box {
+            background: #e3f2fd;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .warning-box {
+            background: #fff3e0;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+            border-left: 4px solid #ff9800;
+        }
+        ul {
+            line-height: 1.8;
+        }
+        .consent-section {
+            background: #f5f5f5;
+            padding: 20px;
+            border-radius: 5px;
+            margin: 30px 0;
+        }
+        .ready-message {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 18px;
+            color: #2196F3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>📚 Research Paper Reading Study</h1>
+        
+        <div class="info-box">
+            <strong>Study Duration:</strong> Approximately 20-30 minutes<br>
+            <strong>Purpose:</strong> Evaluate an AI assistant for academic paper reading
+        </div>
+        
+        <h2>Welcome!</h2>
+        <p>Thank you for participating in this research study. You will be reading a scientific paper while an AI assistant observes your reading patterns and offers contextual help.</p>
+        
+        <h2>What to Expect</h2>
+        <ul>
+            <li>You'll read a research paper about "Role Play with Large Language Models"</li>
+            <li>An AI assistant will monitor your reading behavior (scroll patterns, pauses, etc.)</li>
+            <li>The assistant may offer help when it detects you might need it</li>
+            <li>You can provide feedback on whether the assistance was helpful</li>
+            <li>Your screen will be recorded for research purposes</li>
+        </ul>
+        
+        <h2>Instructions</h2>
+        <ol>
+            <li><strong>Read naturally</strong> - Read the paper as you normally would</li>
+            <li><strong>Take your time</strong> - There's no time pressure</li>
+            <li><strong>Interact with the assistant</strong> - When it offers help, please indicate if it was helpful</li>
+            <li><strong>Complete the paper</strong> - Try to read through the entire document</li>
+        </ol>
+        
+        <div class="warning-box">
+            <strong>Important:</strong> Please keep the browser window in focus during the study. Taking extended breaks or switching to other applications will be noted in the data.
+        </div>
+        
+        <div class="consent-section">
+            <h3>Consent</h3>
+            <p>By proceeding, you confirm that:</p>
+            <ul>
+                <li>You are participating voluntarily</li>
+                <li>You understand your reading behavior will be tracked</li>
+                <li>You consent to screen recording for research purposes</li>
+                <li>Your data will be used only for academic research</li>
+            </ul>
+        </div>
+        
+        <div class="ready-message">
+            <p><strong>When you're ready, return to the terminal and press Enter to begin.</strong></p>
+        </div>
+    </div>
+</body>
+</html>
+<!-- END TEMPLATE -->
+
+<!-- TEMPLATE: feedback -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research Study - Feedback</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #333;
+            border-bottom: 2px solid #4CAF50;
+            padding-bottom: 10px;
+        }
+        .success-box {
+            background: #e8f5e9;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+            border-left: 4px solid #4CAF50;
+        }
+        .form-group {
+            margin: 20px 0;
+        }
+        label {
+            display: block;
+            font-weight: 600;
+            margin-bottom: 5px;
+            color: #555;
+        }
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 14px;
+            resize: vertical;
+            min-height: 100px;
+        }
+        .likert-scale {
+            display: flex;
+            justify-content: space-between;
+            margin: 10px 0;
+        }
+        .likert-option {
+            text-align: center;
+            flex: 1;
+        }
+        .likert-option input {
+            margin: 0 auto;
+            display: block;
+        }
+        .likert-option label {
+            font-size: 12px;
+            font-weight: normal;
+            margin-top: 5px;
+        }
+        .questions-grid {
+            background: #f9f9f9;
+            padding: 20px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .question-row {
+            display: flex;
+            align-items: center;
+            padding: 10px 0;
+            border-bottom: 1px solid #eee;
+        }
+        .question-text {
+            flex: 1;
+            padding-right: 20px;
+        }
+        .question-options {
+            display: flex;
+            gap: 30px;
+        }
+        .submit-section {
+            text-align: center;
+            margin-top: 40px;
+        }
+        .thank-you {
+            text-align: center;
+            color: #4CAF50;
+            font-size: 20px;
+            margin: 30px 0;
+        }
+        .session-info {
+            background: #f5f5f5;
+            padding: 10px;
+            border-radius: 4px;
+            font-size: 12px;
+            color: #666;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>✅ Study Complete - Feedback Form</h1>
+        
+        <div class="success-box">
+            <strong>Thank you for completing the reading task!</strong><br>
+            Your feedback will help us improve the AI assistant.
+        </div>
+        
+        <div class="session-info">
+            Session ID: {{SESSION_ID}}
+        </div>
+        
+        <form id="feedbackForm">
+            <div class="questions-grid">
+                <h3>Please rate your experience:</h3>
+                
+                <div class="question-row">
+                    <div class="question-text">The AI assistant was helpful</div>
+                    <div class="question-options">
+                        <label><input type="radio" name="q1" value="1"> Strongly Disagree</label>
+                        <label><input type="radio" name="q1" value="2"> Disagree</label>
+                        <label><input type="radio" name="q1" value="3"> Neutral</label>
+                        <label><input type="radio" name="q1" value="4"> Agree</label>
+                        <label><input type="radio" name="q1" value="5"> Strongly Agree</label>
+                    </div>
+                </div>
+                
+                <div class="question-row">
+                    <div class="question-text">The timing of interventions was appropriate</div>
+                    <div class="question-options">
+                        <label><input type="radio" name="q2" value="1"> Strongly Disagree</label>
+                        <label><input type="radio" name="q2" value="2"> Disagree</label>
+                        <label><input type="radio" name="q2" value="3"> Neutral</label>
+                        <label><input type="radio" name="q2" value="4"> Agree</label>
+                        <label><input type="radio" name="q2" value="5"> Strongly Agree</label>
+                    </div>
+                </div>
+                
+                <div class="question-row">
+                    <div class="question-text">The assistant was not disruptive</div>
+                    <div class="question-options">
+                        <label><input type="radio" name="q3" value="1"> Strongly Disagree</label>
+                        <label><input type="radio" name="q3" value="2"> Disagree</label>
+                        <label><input type="radio" name="q3" value="3"> Neutral</label>
+                        <label><input type="radio" name="q3" value="4"> Agree</label>
+                        <label><input type="radio" name="q3" value="5"> Strongly Agree</label>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <label for="helpful">What was most helpful about the AI assistant?</label>
+                <textarea id="helpful" name="helpful" placeholder="Please describe..."></textarea>
+            </div>
+            
+            <div class="form-group">
+                <label for="improve">What could be improved about the AI assistant?</label>
+                <textarea id="improve" name="improve" placeholder="Please describe..."></textarea>
+            </div>
+            
+            <div class="form-group">
+                <label for="additional">Any additional comments?</label>
+                <textarea id="additional" name="additional" placeholder="Optional..."></textarea>
+            </div>
+        </form>
+        
+        <div class="thank-you">
+            <p>🙏 Thank you for your participation!</p>
+            <p style="font-size: 16px; color: #666;">You may now close this window.</p>
+        </div>
+    </div>
+    
+    <script>
+        // Auto-save feedback (in a real implementation)
+        document.getElementById('feedbackForm').addEventListener('change', function(e) {
+            console.log('Feedback updated:', e.target.name, e.target.value);
+            // In a real implementation, this would save to a server
+        });
+    </script>
+</body>
+</html>
+<!-- END TEMPLATE -->
+
+<!-- TEMPLATE: assistant_widget -->
+<div class="ai-assistant-widget" id="ai-assistant-widget">
+    <div class="assistant-header">
+        <h3>
+            🤖 Reading Assistant
+        </h3>
+        <div class="assistant-status">
+            <span class="status-indicator"></span>
+            <span>Active</span>
+            <button class="minimize-btn" onclick="toggleMinimize()">⌃</button>
+        </div>
+    </div>
+    
+    <div id="ai-response-container">
+        <!-- AI responses will be inserted here -->
+        <div class="assistant-loading" style="display: none;">
+            <div class="loading-spinner"></div>
+            <span>Analyzing reading patterns...</span>
+        </div>
+    </div>
+    
+    <div class="study-controls">
+        <div class="study-info">
+            <strong>Study Mode:</strong> <span id="study-mode-label">Testing</span><br>
+            <strong>Participant:</strong> <span id="participant-label">-</span>
+        </div>
+        <button class="end-session-btn" onclick="endStudySession()">
+            End Study Session
+        </button>
+    </div>
+</div>
+
+<script>
+    // Initialize widget
+    document.getElementById('study-mode-label').textContent = 
+        window.STUDY_MODE === 'evaluation' ? 'Evaluation' : 'Testing';
+    document.getElementById('participant-label').textContent = 
+        window.PARTICIPANT_ID || 'Anonymous';
+    
+    // Toggle minimize
+    function toggleMinimize() {
+        const widget = document.getElementById('ai-assistant-widget');
+        widget.classList.toggle('minimized');
+    }
+</script>
+<!-- END TEMPLATE -->

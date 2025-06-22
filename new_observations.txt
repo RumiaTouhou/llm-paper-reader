@@ -1,0 +1,4 @@
+["The user, feeling extremely desperate and irritable during exam week, opens a PDF of a research paper.", 
+"As they read the title of the paper, which is about Linear Regression, their frustration continues to grow.", 
+"They jot down a note on their paper, expressing their intention to find more similar methods",
+"They shouted : can you help me????"]

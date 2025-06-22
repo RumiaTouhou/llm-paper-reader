@@ -1,0 +1,81 @@
+{
+  "session_id": "test_49b23a1a_20250620_055450",
+  "participant_id": "test_49b23a1a",
+  "mode": "testing",
+  "start_time": "2025-06-20T05:54:50.528579",
+  "end_time": "2025-06-20T06:00:51.482900",
+  "metrics": {
+    "total_reading_time": 360.954321,
+    "sections_completed": 1,
+    "ai_interventions": 1,
+    "interventions_accepted": 0,
+    "interventions_rejected": 0,
+    "pauses_detected": 0,
+    "rereading_detected": 0
+  },
+  "interactions": [
+    {
+      "timestamp": "2025-06-20T05:54:55.822948",
+      "type": "user_behavior",
+      "data": {
+        "observation": "The user completes the MARLUI: Multi-Agent Reinforcement Learning for Adaptive UIs section after 4 seconds.",
+        "type": "section_complete",
+        "timestamp": 1750388095816,
+        "context": {
+          "section": "MARLUI: Multi-Agent Reinforcement Learning for Adaptive UIs",
+          "scrollPosition": 600,
+          "readingSpeed": 180.18018018018017
+        }
+      }
+    },
+    {
+      "timestamp": "2025-06-20T05:55:42.038218",
+      "type": "ai_response",
+      "data": {
+        "observation": "The user completes the MARLUI: Multi-Agent Reinforcement Learning for Adaptive UIs section after 4 seconds.",
+        "response": "You've just finished reading about MARLUI's approach to using multi-agent reinforcement learning for adaptive interfaces. Would you like a quick summary to reinforce these key concepts before moving forward?"
+      }
+    }
+  ],
+  "ai_memory": {
+    "user_state": {
+      "mood": "neutral",
+      "confusion_level": 0.0,
+      "engagement_level": 0.6,
+      "skills": [],
+      "interests": [],
+      "current_topic": null,
+      "cognitive_load": "low",
+      "potential_knowledge_gaps": [],
+      "needs_help_probability": 0.0,
+      "at_natural_break": true
+    },
+    "paper_context": {
+      "title": null,
+      "current_section": "MARLUI: Multi-Agent Reinforcement Learning for Adaptive UIs",
+      "sections_seen": [
+        "MARLUI: Multi-Agent Reinforcement Learning for Adaptive UIs"
+      ]
+    },
+    "reading_metrics": {
+      "sections_completed": 0,
+      "total_reading_time": 0,
+      "average_time_per_section": 0,
+      "concepts_struggled": [],
+      "current_section": "MARLUI: Multi-Agent Reinforcement Learning for Adaptive UIs"
+    },
+    "intervention_history": [
+      {
+        "timestamp": "2025-06-20T05:55:42.038218",
+        "intervention": {
+          "should_intervene": true,
+          "intervention_type": "section_summary",
+          "urgency": "low",
+          "specific_target": "MARLUI: Multi-Agent Reinforcement Learning for Adaptive UIs section",
+          "reasoning": "User is at a natural break point (section transition) with low cognitive load and no confusion, and it's their first section read. A quick summary would help consolidate their understanding at this early reading stage without disrupting flow.",
+          "respect_reading_flow": true
+        }
+      }
+    ]
+  }
+}
