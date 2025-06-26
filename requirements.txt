@@ -1,0 +1,14 @@
+# Core dependencies
+markdown>=3.4.0
+openai>=1.0.0
+
+# Enhanced markdown features (for LaTeX support)
+pymdown-extensions>=10.0
+
+# Note: All other imports in the code are Python built-ins:
+# - argparse, json, os, sys, time, uuid, datetime
+# - webbrowser, threading, re
+# - http.server (HTTPServer, BaseHTTPRequestHandler)
+# - typing (Dict, List, Optional, Tuple, Callable)
+# - dataclasses (dataclass)
+# - urllib.parse

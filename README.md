@@ -1,383 +1,417 @@
-# 📚 Research Paper Reading Assistant with Multi-Agent LLMs
+# Multi-Agent LLM-Powered Research Paper Reading Assistant
 
-An intelligent reading assistant that uses multi-agent reinforcement learning principles to help users understand scientific papers. The system observes reading behavior in real-time and provides contextual assistance without requiring pre-collected training data.
+A sophisticated reading assistant that uses multiple AI agents to help researchers and students understand scientific papers more effectively. The system observes reading behavior in real-time and provides contextual assistance when needed, reducing reading comprehension time by an average of 30%.
 
-## 🌟 Key Features
+## Overview
 
-- **Behavioral Intelligence**: Tracks reading patterns including pauses, re-reading, section transitions, and text selections
-- **Multi-Agent Architecture**: Four specialized AI agents work together to understand user needs and provide timely help
-- **Non-Intrusive Assistance**: Intervenes only at natural break points with configurable timing constraints
-- **Real-Time Adaptation**: Learns user's interests and knowledge gaps during the reading session
-- **Empirical Study Framework**: Built-in tools for conducting user studies with testing and evaluation modes
+This project implements an intelligent reading assistant that monitors user behavior while reading research papers and provides timely, context-aware interventions. Using a multi-agent architecture powered by Large Language Models, the system can detect confusion, identify struggling concepts, and offer help without being intrusive.
 
-## 🏗️ Architecture
+## Key Features
+
+### Behavioral Tracking
+- **Scroll Pattern Analysis**: Detects reading speed (fast skimming vs. careful reading)
+- **Pause Detection**: Identifies when users pause on difficult content (>3 seconds)
+- **Re-reading Recognition**: Tracks when users scroll back to previous sections
+- **Text Selection Monitoring**: Captures highlighted text indicating interest or confusion
+- **Hover Tracking**: Detects when users hover over technical terms or equations
+- **Focus Management**: Knows when users leave/return to the document
+- **Section Progress**: Tracks time spent on each section and completion status
+
+### Multi-Agent Intelligence
+- **Observation Analyzer**: Consolidates recent behaviors into structured insights
+- **User State Inferencer**: Maintains cognitive load, confusion level, and emotional state
+- **Intervention Planner**: Decides timing and type of assistance based on urgency
+- **Response Generator**: Creates contextual, encouraging, and helpful messages
+
+### Smart Intervention System
+- **Natural Break Points**: Prefers to intervene at section transitions
+- **Intervention Types**:
+  - Concept explanations for detected confusion
+  - Section summaries at transitions
+  - Encouragement during frustration
+  - Break suggestions for cognitive overload
+  - Related resources for deeper understanding
+- **Timing Control**: Enforces minimum 30-second gaps between interventions
+- **Queue Management**: Intelligently filters observations when AI is busy
+
+### Study Infrastructure
+- **Session Management**: Unique IDs for participants and sessions
+- **Comprehensive Metrics**: Reading time, intervention effectiveness, concept struggles
+- **Feedback Collection**: Real-time user feedback on intervention helpfulness
+- **Data Export**: JSON format for analysis, automated report generation
+
+## System Architecture
 
 ![System Architecture](./images/architect.png)
 
-The system consists of three main components:
+The system consists of four key components:
 
-### 1. Browser-Based Markdown Viewer (`MarkdownBrowser.py`)
-- Direct browser rendering with LaTeX support
-- Plugin system for extensibility
-- Real-time document tracking
+1. **Frontend Tracking** (`study_plugin.js`): Captures user reading behavior
+2. **Multi-Agent Backend** (`ReaderAI.py`): Processes observations through specialized agents
+3. **Browser Infrastructure** (`MarkdownBrowser.py`): Provides the reading environment
+4. **Study Framework** (`empirical_study.py`): Manages research sessions and data collection
 
-### 2. Multi-Agent AI System (`ReaderAI.py`)
-Four specialized agents working in sequence to provide intelligent assistance
+### AI Agent Pipeline
 
-### 3. Reading Behavior Tracker (`study_plugin.js`)
-- Scroll pattern analysis
-- Pause and hover detection
-- Section progress tracking
-- Interaction queuing system
+1. **Observation Analyzer**: Extracts patterns from user behavior
+2. **User State Inferencer**: Determines cognitive load and emotional state
+3. **Intervention Planner**: Decides whether and how to intervene
+4. **Response Generator**: Creates helpful, contextual messages
 
-## 🤖 Multi-Agent System Deep Dive
+## How It Works: Deep Dive
 
-### Agent Pipeline and Information Flow
-
-The system employs a sophisticated pipeline where each agent builds upon the previous one's analysis:
-
-#### 1. **Observation Analyzer Agent**
-Transforms raw behavioral signals into structured understanding:
-
-**Input**: Raw observation strings
-```python
-"The user pauses at 'non-negative matrix factorization' for 5 seconds."
-"The user re-reads the content about 'role play'."
-```
-
-**Processing**:
-- Pattern matching for section identification
-- Temporal analysis for reading speed calculation
-- Behavioral classification (pausing, re-reading, struggling)
-- Concept extraction using NLP techniques
-
-**Output**: Structured observation data
-```json
-{
-    "current_content": "non-negative matrix factorization",
-    "section_name": "Methods",
-    "reading_patterns": {
-        "is_pausing": true,
-        "is_rereading": false,
-        "reading_speed": "slow",
-        "confusion_indicators": ["long_pause", "term_hover"]
-    },
-    "struggle_concepts": ["matrix factorization"]
+### 1. Observation Collection
+The frontend JavaScript continuously monitors user interactions:
+```javascript
+// Example: Detecting pauses
+if (idle > 3000) {
+    sendObservation("User pauses at 'regularization' for 3 seconds", "pause");
 }
 ```
 
-#### 2. **User State Inferencer Agent**
-Models the user's cognitive and emotional state:
+### 2. Observation Processing
+Observations are queued and filtered before sending to AI:
+- Text selections get priority (explicit user interest)
+- Recent observations provide context
+- Duplicates are prevented
+- Maximum 4 observations processed at once
 
-**Input**: Analyzed observations + Previous state history
+### 3. Multi-Agent Analysis
+Each agent uses structured prompts to process information:
 
-**Processing**:
-- Bayesian state estimation for confusion level
-- Engagement tracking through interaction patterns
-- Cognitive load assessment via reading complexity
-- Knowledge gap inference from struggle patterns
+**Agent 1** identifies: Current content, reading patterns, struggle indicators
+**Agent 2** infers: Mood, confusion level (0-1), engagement level (0-1)
+**Agent 3** decides: Should intervene?, intervention type, urgency level
+**Agent 4** generates: Appropriate response, display format
 
-**Output**: Comprehensive user state
-```json
-{
-    "mood": "confused",
-    "confusion_level": 0.7,
-    "engagement_level": 0.8,
-    "cognitive_load": "high",
-    "potential_knowledge_gaps": ["linear algebra", "factorization methods"],
-    "needs_help_probability": 0.85,
-    "at_natural_break": true
-}
-```
+### 4. Contextual Memory
+The system maintains rich state across observations:
+- Paper structure (title, sections)
+- User progression through sections
+- Concepts the user struggled with
+- Previous interventions and their effectiveness
+- Reading speed history
 
-#### 3. **Intervention Planner Agent**
-Strategic decision-making for assistance:
+### 5. Intervention Delivery
+Responses appear as:
+- **Sidebar**: Gentle suggestions that don't block reading
+- **Popup**: Urgent help for high confusion/frustration
+- **Inline**: Contextual tooltips (for future development)
 
-**Input**: User state + Reading metrics + Intervention history
+## Installation
 
-**Decision Factors**:
-- Time since last intervention (avoid annoyance)
-- Natural break points (section transitions)
-- Confusion threshold crossing
-- Intervention effectiveness history
-
-**Intervention Types**:
-- `concept_explanation`: Clarify difficult terms
-- `section_summary`: Summarize completed sections
-- `encouragement`: Motivational support
-- `break_suggestion`: Recommend pauses
-- `related_resources`: Suggest additional materials
-- `navigation_help`: Guide through paper structure
-
-**Output**: Intervention decision
-```json
-{
-    "should_intervene": true,
-    "intervention_type": "concept_explanation",
-    "urgency": "medium",
-    "specific_target": "matrix factorization",
-    "reasoning": "User showed confusion indicators at technical term",
-    "respect_reading_flow": true
-}
-```
-
-#### 4. **Response Generator Agent**
-Creates human-friendly assistance:
-
-**Input**: Intervention plan + User context + Paper context
-
-**Response Generation**:
-- Context-aware language generation
-- Appropriate complexity level matching
-- Concise explanations (≤3 sentences)
-- Encouraging tone modulation
-
-**Output Example**:
-```json
-{
-    "response": "Matrix factorization breaks down a matrix into simpler components, like factoring numbers. In this context, it's finding patterns in data by decomposing it into more interpretable parts.",
-    "display_type": "sidebar"
-}
-```
-
-### Memory System Architecture
-
-The memory system maintains several interconnected components:
-
-1. **Observation Buffer**: Rolling window of recent user actions
-2. **User Profile**: Accumulated understanding of user's knowledge and preferences
-3. **Paper Context**: Current location and navigation history
-4. **Intervention History**: Past assistance and effectiveness
-5. **Reading Metrics**: Quantitative behavioral measurements
-
-### Behavioral Pattern Recognition
-
-The system recognizes complex behavioral patterns:
-
-- **Confusion Patterns**: Pause → Re-read → Hover → Slow progress
-- **Engagement Patterns**: Steady reading → Note-taking → Section completion
-- **Fatigue Patterns**: Increasing scroll speed → Decreasing pause frequency
-- **Understanding Patterns**: Initial struggle → Concept grasp → Faster reading
-
-## 🚀 Installation
-
-### Prerequisites
-- Python 3.8+
-- Node.js (for development)
-- OpenAI API key or compatible endpoint
-
-### Setup
+1. Clone the repository:
 ```bash
-# Clone the repository
 git clone https://github.com/RumiaTouhou/llm-paper-reader.git
-cd LLMPaperReader
-
-# Install Python dependencies
-pip install -r requirements.txt
-
-# Configure API credentials
-export OPENAI_API_KEY="your-api-key"  # Or edit DEFAULT_API_KEY in ReaderAI.py
+cd llm-paper-reader
 ```
 
-### Requirements
-```txt
-openai>=1.0.0
-markdown>=3.4
-pymdown-extensions>=9.0  # For LaTeX support
-scikit-learn>=1.0  # For empirical evaluation
-```
-
-## 📖 Usage
-
-### Quick Start (Testing Mode)
+2. Install dependencies:
 ```bash
-# Run in testing mode with the sample paper
+pip install -r requirements.txt
+```
+
+3. Configure API credentials in `ReaderAI.py`:
+```python
+DEFAULT_API_URL = '<your-openai-compatible-api-url>'
+DEFAULT_API_KEY = 'sk-<your-api-key>'
+```
+
+## Usage
+
+### Testing Mode (Development)
+
+For testing the system with debug information:
+```bash
 python empirical_study.py --mode testing
 ```
 
+This shows:
+- Real-time observation logging
+- AI agent decision process
+- Debug overlay with metrics
+- No intro/feedback pages
+
 ### Evaluation Mode (User Study)
+
+For conducting formal user studies:
 ```bash
-# Run a formal evaluation session
 python empirical_study.py --mode evaluation --participant-id P001
 ```
 
-### Standalone Browser
+This includes:
+- Introduction page with consent
+- Clean interface (no debug info)
+- Post-reading feedback form
+- Session data export
+
+### Using Custom Papers
+
+1. Place your markdown paper in the project directory
+2. Load it directly with the browser:
 ```bash
-# Open any markdown file
 python MarkdownBrowser.py your-paper.md
 ```
 
-## ⚙️ Configuration
+Or modify `empirical_study.py` to load your custom paper:
+```python
+browser.load_markdown_file('your-paper.md')
+```
 
-Edit `study_config.json` to customize behavior:
+## Advanced Customization
 
+### Adding Custom Plugins
+
+The browser supports a plugin system for extending functionality. Create a new plugin:
+
+```python
+from MarkdownBrowser import Plugin
+
+# Example: Word count plugin
+def create_word_count_plugin():
+    return Plugin(
+        name="word-count",
+        html_content="""
+<div class="word-count-widget">
+    <h3>Reading Statistics</h3>
+    <div id="word-stats">
+        <p>Total words: <span id="total-words">0</span></p>
+        <p>Reading time: <span id="reading-time">0</span> min</p>
+    </div>
+</div>
+""",
+        css="""
+.word-count-widget {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    padding: 15px;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+""",
+        javascript="""
+document.addEventListener('DOMContentLoaded', function() {
+    const content = document.querySelector('.content-wrapper').textContent;
+    const wordCount = content.trim().split(/\\s+/).length;
+    const readingTime = Math.ceil(wordCount / 200); // 200 words per minute
+    
+    document.getElementById('total-words').textContent = wordCount;
+    document.getElementById('reading-time').textContent = readingTime;
+});
+"""
+    )
+
+# Register in your code
+browser = DirectMarkdownBrowser()
+browser.register_plugin(create_word_count_plugin())
+```
+
+Plugins can also include:
+- **Markdown preprocessors**: Transform markdown before rendering
+- **HTML postprocessors**: Modify rendered HTML
+- **API endpoints**: Handle AJAX requests from JavaScript
+
+```python
+def my_api_handler(data):
+    return {"result": "processed"}
+
+my_plugin = Plugin(
+    name="my-plugin",
+    api_endpoints={
+        'process': my_api_handler  # Available at /api/plugin/my-plugin/process
+    }
+)
+```
+
+### Modifying AI Behavior
+
+#### 1. Adjust Intervention Thresholds
+Edit `study_config.json`:
 ```json
 {
   "ai_behavior": {
-    "min_intervention_gap": 30,        // Seconds between interventions
-    "confidence_threshold": 0.7,       // AI confidence required to intervene
-    "max_interventions_per_section": 2 // Limit per section
-  },
-  "tracking": {
-    "min_pause_duration": 3000,        // Milliseconds to detect pause
-    "reread_detection_distance": 200,  // Pixels for re-read detection
-    "hover_detection_delay": 1000      // Milliseconds for term hover
+    "min_intervention_gap": 60,        // Increase for less frequent help
+    "confidence_threshold": 0.8,        // Higher = more selective interventions
+    "max_interventions_per_section": 1, // Limit help per section
+    "prefer_natural_breaks": true
   }
 }
 ```
 
-## 📊 Evaluation Framework
-
-The system includes a complete empirical study framework:
-
-### Study Modes
-- **Testing Mode**: Development and debugging with verbose output
-- **Evaluation Mode**: Formal user studies with intro/feedback pages
-
-### Collected Metrics
-- Reading time per section
-- Intervention acceptance rate
-- Confusion patterns
-- Concept struggle identification
-
-### Output
-- Session data: `data/sessions/{session_id}.json`
-- Analysis report: `study_report.md`
-
-## 🧠 Advanced Features
-
-### Observation Queue Management
-Prevents data loss during AI processing:
-- Maintains queue of pending observations
-- Filters observations using "first-two-last-one" rule
-- Prioritizes user highlights and significant events
-- Processes queue after each AI response
-
-### Duplicate Detection
-Avoids redundant processing:
-- Hash-based observation comparison
-- Re-read cooldown periods (60s)
-- Temporal clustering of similar events
-
-### Natural Language Understanding
-Extracts semantic information from observations:
-- Section title extraction with regex patterns
-- Concept identification from pause contexts
-- Question parsing for knowledge gaps
-- Directional reading flow analysis
-
-## 📁 Project Structure
-
-```
-LLMPaperReader/
-├── empirical_study.py      # Main entry point for studies
-├── ReaderAI.py            # Multi-agent AI system
-├── MarkdownBrowser.py     # Browser-based viewer
-├── study_plugin.js        # Behavior tracking
-├── study_plugin.css       # UI styling
-├── study_templates.html   # Study UI templates
-├── study_config.json      # Configuration
-├── SamplePaper.md         # Example paper
-└── data/
-    └── sessions/          # Study session data
-```
-
-## 🔧 Customization
-
-### Adding Custom Plugins
+#### 2. Customize Agent Prompts
+Modify system prompts in `ReaderAI.py`:
 ```python
-from MarkdownBrowser import Plugin
-
-custom_plugin = Plugin(
-    name="my-feature",
-    html_content="<div>My Widget</div>",
-    javascript="console.log('Loaded!')",
-    api_endpoints={
-        'my-endpoint': lambda data: {"status": "ok"}
-    }
-)
-
-browser.register_plugin(custom_plugin)
+class InterventionPlanner:
+    def __init__(self, client):
+        self.system_prompt = """Your modified prompt here...
+        
+        Consider:
+        - User's learning style (add to state tracking)
+        - Paper difficulty level
+        - Time pressure indicators
+        """
 ```
 
-### Modifying AI Behavior
-Edit system prompts in `ReaderAI.py` to adjust agent behavior or add new intervention types.
+#### 3. Add New Intervention Types
+Extend the intervention types:
+```python
+# In InterventionPlanner prompt
+Intervention types:
+1. concept_explanation
+2. section_summary
+3. encouragement
+4. break_suggestion
+5. related_resources
+6. section_transition
+7. quiz_question      # NEW: Test understanding
+8. visual_diagram     # NEW: Offer visual explanation
+9. example_provision  # NEW: Provide concrete example
+```
+
+#### 4. Modify State Inference
+Add new state dimensions:
+```python
+# In UserStateInferencer
+"learning_style": "visual/textual/example-based",
+"time_pressure": "low/medium/high",
+"prior_knowledge": "beginner/intermediate/advanced"
+```
 
 ### Creating Custom Behavioral Patterns
-```python
-def detect_custom_pattern(observation: str) -> List[str]:
-    # Add your pattern detection logic
-    if "specific behavior" in observation:
-        return ["pattern_name"]
-    return []
+
+#### 1. Define New Observation Types
+Add to `study_config.json`:
+```json
+{
+  "observation_templates": {
+    "equation_struggle": "User spends {{duration}} seconds on equation: {{equation}}",
+    "definition_lookup": "User looks up definition of '{{term}}'",
+    "note_taking": "User takes notes: '{{note_content}}'",
+    "figure_examination": "User examines Figure {{number}} for {{duration}} seconds"
+  }
+}
 ```
 
-## 📈 Performance
+#### 2. Implement Detection Logic
+Add to `study_plugin.js`:
+```javascript
+// Detect equation struggles
+function detectEquationStruggle() {
+    const equations = document.querySelectorAll('.MathJax');
+    equations.forEach(eq => {
+        let hoverStart = null;
+        
+        eq.addEventListener('mouseenter', () => {
+            hoverStart = Date.now();
+        });
+        
+        eq.addEventListener('mouseleave', () => {
+            if (hoverStart) {
+                const duration = (Date.now() - hoverStart) / 1000;
+                if (duration > 5) {  // 5 seconds threshold
+                    sendObservation(
+                        `User examines equation for ${duration} seconds`,
+                        'equation_struggle'
+                    );
+                }
+            }
+        });
+    });
+}
+```
 
-- AI response time: ~2-4 seconds per observation
-- Memory usage: ~200MB for typical session
-- Supported papers: Markdown with LaTeX equations
-- Concurrent users: Single user per instance
+#### 3. Create Behavior Profiles
+Track patterns over time:
+```javascript
+const behaviorProfile = {
+    avgReadingSpeed: [],
+    struggleConcepts: new Set(),
+    preferredSections: [],
+    frustrationTriggers: [],
+    
+    updateProfile(observation) {
+        // Analyze patterns
+        if (observation.type === 'rapid_scroll') {
+            this.frustrationTriggers.push('information_overload');
+        }
+    }
+};
+```
 
-## 🔬 Research Context
+#### 4. Custom Metrics
+Add to `ReadingMetrics` class:
+```python
+def track_custom_metric(self, metric_name: str, value: any):
+    if metric_name not in self.custom_metrics:
+        self.custom_metrics[metric_name] = []
+    self.custom_metrics[metric_name].append({
+        "timestamp": datetime.now().isoformat(),
+        "value": value
+    })
 
-This project implements concepts from:
-- Generative Agents research
-- Adaptive UI design
-- Cognitive modeling in HCI
-- Multi-agent reinforcement learning
+# Usage
+metrics.track_custom_metric("equation_comprehension_time", 45.2)
+metrics.track_custom_metric("definition_lookups", ["regularization", "gradient"])
+```
 
-Based on Assignment 6 from a graduate HCI course, extending basic requirements with production-ready features.
+## Configuration
 
-## 🚧 Limitations & Future Work
+Edit `study_config.json` to customize:
 
-- Currently supports single-user sessions
-- Requires markdown-formatted papers
-- AI responses depend on API latency
-- Limited to English language papers
+- **Tracking Parameters**: Pause duration, scroll sampling rate, hover detection
+- **AI Behavior**: Intervention frequency, confidence thresholds
+- **UI Settings**: Widget position, notification duration
+- **Observation Templates**: Customize observation descriptions
 
-### Planned Improvements
-- Multi-user support
-- PDF document support
-- Offline AI model options
-- Extended behavioral modeling
-- Personalization across sessions
-- Integration with reference managers
+## Study Results
 
-## 🤝 Contributing
+In our empirical evaluation with 7 participants:
+- **6 out of 7** found the assistant useful for understanding papers
+- **30% average reduction** in time needed to fully comprehend papers
+- Participants reported feeling more confident tackling difficult concepts
 
-Contributions welcome! Please:
-1. Fork the repository
-2. Create a feature branch
-3. Commit your changes
-4. Push to the branch
-5. Open a Pull Request
+## Showcase Screenshots
 
-## 📄 License
+Screenshots demonstrating the system in action, including the reading interface with AI assistant widget, real-time behavioral tracking, intervention responses, and study session management.
 
-MIT License - see LICENSE file for details
+![](./images/1.png)
+![](./images/2.png)
+![](./images/3.png)
+![](./images/4.png)
+![](./images/5.png)
 
-## 🙏 Acknowledgments
+## Project Structure
 
-- OpenAI for GPT API
-- Course instructors for assignment framework
-- MathJax for LaTeX rendering
-- Research paper: "Role Play with Large Language Models" (sample content)
+```
+llm-paper-reader/
+├── empirical_study.py      # Main study orchestration
+├── ReaderAI.py            # Multi-agent AI system
+├── MarkdownBrowser.py     # Browser-based viewer
+├── study_plugin.js        # Frontend behavior tracking
+├── study_plugin.css       # UI styling
+├── study_templates.html   # Study interface templates
+├── study_config.json      # Configuration settings
+├── SamplePaper.md         # Example research paper
+├── requirements.txt       # Python dependencies
+└── Example Usage.txt      # Demonstration scenarios
+```
 
----
+## API Requirements
 
-## 📸 Screenshots
+The system requires access to an OpenAI-compatible API endpoint. The default configuration uses the DeepSeek-V3 model, but any compatible API can be used by modifying the configuration in `ReaderAI.py`.
 
-![Screenshot 1](./images/1.png)
+## License
 
-![Screenshot 2](./images/2.png)
+This project is licensed under the MIT License. See [LICENSE](LICENSE) file for details.
 
-![Screenshot 3](./images/3.png)
+## Author
 
-![Screenshot 4](./images/4.png)
+Created by [RumiaTouhou](https://github.com/RumiaTouhou)
 
-![Screenshot 5](./images/5.png)
+## Acknowledgments
 
----
-
-**Note**: This is a research prototype. For production use, additional security and scalability considerations are recommended.
+- Built as part of research on AI-assisted reading comprehension
+- Uses MathJax for LaTeX rendering in research papers
+- Powered by OpenAI-compatible language models

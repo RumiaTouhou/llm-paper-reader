@@ -1,0 +1,949 @@
+================================================================================
+TEST CASE 1: Machine Learning Beginner
+================================================================================
+
+--- Observation 1 ---
+Input: The user opens a PDF of a research paper about Linear Regression.
+
+[Agent 1 - Observation Analysis]: {
+  "current_content": "PDF of a research paper about Linear Regression",
+  "section_name": null,
+  "paper_title": "Linear Regression",
+  "reading_patterns": {
+    "is_pausing": false,
+    "is_rereading": false,
+    "reading_speed": "normal",
+    "confusion_indicators": [],
+    "section_transition": false
+  },
+  "user_actions": [
+    "opens a PDF"
+  ],
+  "time_on_section": "unknown",
+  "struggle_concepts": []
+}
+
+[Agent 2 - User State]: {
+  "mood": "neutral",
+  "confusion_level": 0.0,
+  "engagement_level": 0.5,
+  "cognitive_load": "low",
+  "potential_knowledge_gaps": [],
+  "needs_help_probability": 0.0,
+  "at_natural_break": false
+}
+
+[Agent 3 - Intervention Plan]: {
+  "should_intervene": false,
+  "intervention_type": "none",
+  "urgency": "low",
+  "specific_target": "none",
+  "reasoning": "User has just started reading (no sections completed, no time on section) and shows no signs of confusion or struggle. Engagement is moderate and cognitive load is low. A premature intervention might disrupt initial reading flow.",
+  "respect_reading_flow": true
+}
+
+[Agent 4 - Response]: {
+  "response": null,
+  "display_type": null
+}
+
+[Reading Metrics Summary]: {
+  "sections_completed": 0,
+  "total_reading_time": 0,
+  "average_time_per_section": 0,
+  "concepts_struggled": [],
+  "current_section": null
+}
+
+[No intervention]
+
+--- Observation 2 ---
+Input: The user reads the title and abstract slowly, taking about 2 minutes.
+
+[Agent 1 - Observation Analysis]: {
+  "current_content": "title and abstract",
+  "section_name": "title and abstract",
+  "paper_title": "research paper about Linear Regression",
+  "reading_patterns": {
+    "is_pausing": true,
+    "is_rereading": false,
+    "reading_speed": "slow",
+    "confusion_indicators": [],
+    "section_transition": false
+  },
+  "user_actions": [
+    "opens a PDF"
+  ],
+  "time_on_section": "2 minutes",
+  "struggle_concepts": []
+}
+
+[Agent 2 - User State]: {
+  "mood": "neutral",
+  "confusion_level": 0.0,
+  "engagement_level": 0.6,
+  "cognitive_load": "low",
+  "potential_knowledge_gaps": [],
+  "needs_help_probability": 0.0,
+  "at_natural_break": true
+}
+
+[Agent 3 - Intervention Plan]: {
+  "should_intervene": true,
+  "intervention_type": "section_summary",
+  "urgency": "low",
+  "specific_target": "title and abstract",
+  "reasoning": "User is at a natural break point (title and abstract section) with low cognitive load, making it a good time for a brief summary to establish context before diving deeper. Engagement is moderate (0.6) and there's no confusion, so this intervention respects reading flow while providing a useful orientation.",
+  "respect_reading_flow": true
+}
+
+[Agent 4 - Response]: {
+  "response": "Let's quickly summarize the title and abstract: This paper focuses on linear regression, a fundamental statistical method for modeling relationships between variables. The abstract likely outlines the key objectives and findings.",
+  "display_type": "sidebar"
+}
+
+[Reading Metrics Summary]: {
+  "sections_completed": 0,
+  "total_reading_time": 0,
+  "average_time_per_section": 0,
+  "concepts_struggled": [],
+  "current_section": "title and abstract"
+}
+
+🤖 ASSISTANT RESPONSE: Let's quickly summarize the title and abstract: This paper focuses on linear regression, a fundamental statistical method for modeling relationships between variables. The abstract likely outlines the key objectives and findings.
+
+--- Observation 3 ---
+Input: The user pauses at the word 'regularization' and re-reads the sentence three times.
+
+[Agent 1 - Observation Analysis]: {
+  "current_content": "abstract",
+  "section_name": "Abstract",
+  "paper_title": "research paper about Linear Regression",
+  "reading_patterns": {
+    "is_pausing": true,
+    "is_rereading": true,
+    "reading_speed": "slow",
+    "confusion_indicators": [
+      "pausing",
+      "re-reading"
+    ],
+    "section_transition": false
+  },
+  "user_actions": [
+    "opens PDF"
+  ],
+  "time_on_section": "2 minutes",
+  "struggle_concepts": [
+    "regularization"
+  ]
+}
+
+[Agent 2 - User State]: {
+  "mood": "confused",
+  "confusion_level": 0.7,
+  "engagement_level": 0.8,
+  "cognitive_load": "medium",
+  "potential_knowledge_gaps": [
+    "regularization"
+  ],
+  "needs_help_probability": 0.6,
+  "at_natural_break": false
+}
+
+[Agent 3 - Intervention Plan]: {
+  "should_intervene": true,
+  "intervention_type": "concept_explanation",
+  "urgency": "medium",
+  "specific_target": "regularization",
+  "reasoning": "User shows high confusion (0.7) and engagement (0.8) with clear struggle on 'regularization' concept and rereading behavior. The recent intervention was brief enough (19.7s) that this is likely addressing the same issue. Explaining the concept now may prevent deeper confusion later.",
+  "respect_reading_flow": false
+}
+
+[Agent 4 - Response]: {
+  "response": "I notice you're focusing on *regularization* - it's a technique that prevents overfitting in linear regression by adding a penalty term to the model's loss function (this will be explained in detail in the Methods section). Would you like me to break this down further?",
+  "display_type": "sidebar"
+}
+
+[Reading Metrics Summary]: {
+  "sections_completed": 1,
+  "total_reading_time": 36.030741930007935,
+  "average_time_per_section": 36.030741930007935,
+  "concepts_struggled": [
+    "regularization"
+  ],
+  "current_section": "Abstract"
+}
+
+🤖 ASSISTANT RESPONSE: I notice you're focusing on *regularization* - it's a technique that prevents overfitting in linear regression by adding a penalty term to the model's loss function (this will be explained in detail in the Methods section). Would you like me to break this down further?
+
+--- Observation 4 ---
+Input: The user writes down: 'What is regularization? Why do we need it?'
+
+[Agent 1 - Observation Analysis]: {
+  "current_content": "abstract",
+  "section_name": "abstract",
+  "paper_title": "Linear Regression",
+  "reading_patterns": {
+    "is_pausing": true,
+    "is_rereading": true,
+    "reading_speed": "slow",
+    "confusion_indicators": [
+      "re-reading",
+      "pausing"
+    ],
+    "section_transition": false
+  },
+  "user_actions": [
+    "writes down a question about regularization"
+  ],
+  "time_on_section": "2 minutes",
+  "struggle_concepts": [
+    "regularization"
+  ]
+}
+
+[Agent 2 - User State]: {
+  "mood": "confused",
+  "confusion_level": 0.8,
+  "engagement_level": 0.85,
+  "cognitive_load": "high",
+  "potential_knowledge_gaps": [
+    "regularization"
+  ],
+  "needs_help_probability": 0.7,
+  "at_natural_break": false
+}
+
+[Agent 3 - Intervention Plan]: {
+  "should_intervene": true,
+  "intervention_type": "concept_explanation",
+  "urgency": "high",
+  "specific_target": "regularization",
+  "reasoning": "User shows high confusion (0.8) and cognitive load, specifically struggling with 'regularization' as evidenced by writing a question about it and it being flagged as a potential knowledge gap. High engagement (0.85) suggests they're actively trying to understand. Immediate intervention is warranted despite short time since last intervention due to clear struggle with a foundational concept.",
+  "respect_reading_flow": false
+}
+
+[Agent 4 - Response]: {
+  "response": "I notice you're working hard to understand regularization - great effort! Let me briefly explain: regularization adds a penalty term to prevent overfitting, helping models generalize better (see 'Model Evaluation' section). Would you like a more detailed example?",
+  "display_type": "popup"
+}
+
+[Reading Metrics Summary]: {
+  "sections_completed": 2,
+  "total_reading_time": 73.70317387580872,
+  "average_time_per_section": 36.85158693790436,
+  "concepts_struggled": [
+    "regularization"
+  ],
+  "current_section": "abstract"
+}
+
+🤖 ASSISTANT RESPONSE: I notice you're working hard to understand regularization - great effort! Let me briefly explain: regularization adds a penalty term to prevent overfitting, helping models generalize better (see 'Model Evaluation' section). Would you like a more detailed example?
+
+--- Observation 5 ---
+Input: The user continues reading but keeps going back to the previous paragraph.
+
+[Agent 1 - Observation Analysis]: {
+  "current_content": "previous paragraph about regularization",
+  "section_name": "Abstract or Introduction",
+  "paper_title": "research paper about Linear Regression",
+  "reading_patterns": {
+    "is_pausing": true,
+    "is_rereading": true,
+    "reading_speed": "slow",
+    "confusion_indicators": [
+      "re-reading same sentence",
+      "frequent back-navigation"
+    ],
+    "section_transition": false
+  },
+  "user_actions": [
+    "wrote down questions about regularization",
+    "keeps returning to previous paragraph"
+  ],
+  "time_on_section": "prolonged (over 2 minutes with re-reading)",
+  "struggle_concepts": [
+    "regularization",
+    "purpose of regularization"
+  ]
+}
+
+[Agent 2 - User State]: {
+  "mood": "frustrated",
+  "confusion_level": 0.9,
+  "engagement_level": 0.8,
+  "cognitive_load": "high",
+  "potential_knowledge_gaps": [
+    "regularization",
+    "purpose of regularization",
+    "mathematical formulation of regularization"
+  ],
+  "needs_help_probability": 0.85,
+  "at_natural_break": false
+}
+
+[Agent 3 - Intervention Plan]: {
+  "should_intervene": true,
+  "intervention_type": "concept_explanation",
+  "urgency": "high",
+  "specific_target": "regularization",
+  "reasoning": "User shows high confusion (0.9) and frustration with clear knowledge gaps about regularization (as evidenced by written questions and frequent re-reading). High cognitive load and prolonged time on section indicate struggling. Despite recent intervention, immediate help is justified given high needs_help_probability (0.85) and active engagement (0.8).",
+  "respect_reading_flow": false
+}
+
+[Agent 4 - Response]: {
+  "response": "I notice you're struggling with regularization - let me help simplify it! Regularization prevents overfitting by adding a penalty term to the loss function (like L1/L2 norms). Would you like me to explain the mathematical formulation or practical purpose first?",
+  "display_type": "popup"
+}
+
+[Reading Metrics Summary]: {
+  "sections_completed": 3,
+  "total_reading_time": 116.43371748924255,
+  "average_time_per_section": 38.81123916308085,
+  "concepts_struggled": [
+    "regularization"
+  ],
+  "current_section": "Abstract or Introduction"
+}
+
+🤖 ASSISTANT RESPONSE: I notice you're struggling with regularization - let me help simplify it! Regularization prevents overfitting by adding a penalty term to the loss function (like L1/L2 norms). Would you like me to explain the mathematical formulation or practical purpose first?
+
+--- Observation 6 ---
+Input: The user moves on to the INTRODUCTION section.
+
+[Agent 1 - Observation Analysis]: {
+  "current_content": "INTRODUCTION section",
+  "section_name": "INTRODUCTION",
+  "paper_title": null,
+  "reading_patterns": {
+    "is_pausing": false,
+    "is_rereading": false,
+    "reading_speed": "normal",
+    "confusion_indicators": [],
+    "section_transition": true
+  },
+  "user_actions": [
+    "wrote down questions about regularization"
+  ],
+  "time_on_section": "transition just occurred - too early to estimate",
+  "struggle_concepts": [
+    "regularization"
+  ]
+}
+
+[Agent 2 - User State]: {
+  "mood": "engaged",
+  "confusion_level": 0.7,
+  "engagement_level": 0.9,
+  "cognitive_load": "medium",
+  "potential_knowledge_gaps": [
+    "regularization"
+  ],
+  "needs_help_probability": 0.7,
+  "at_natural_break": false
+}
+
+[Agent 3 - Intervention Plan]: {
+  "should_intervene": true,
+  "intervention_type": "concept_explanation",
+  "urgency": "medium",
+  "specific_target": "regularization",
+  "reasoning": "User has a high confusion level (0.7) specifically around regularization, as evidenced by their written questions and struggle concepts. While not at a natural break point, the user's engagement (0.9) suggests they're actively trying to understand. The recent section transition provides a good moment to clarify this foundational concept before proceeding.",
+  "respect_reading_flow": true
+}
+
+[Agent 4 - Response]: {
+  "response": "I notice you're engaged but potentially confused about regularization. It's a technique to prevent overfitting by adding penalty terms to the model's loss function (we'll see this again in the Methods section). Would you like a quick example to clarify?",
+  "display_type": "sidebar"
+}
+
+[Reading Metrics Summary]: {
+  "sections_completed": 4,
+  "total_reading_time": 157.0309271812439,
+  "average_time_per_section": 39.257731795310974,
+  "concepts_struggled": [
+    "regularization"
+  ],
+  "current_section": "INTRODUCTION"
+}
+
+🤖 ASSISTANT RESPONSE: I notice you're engaged but potentially confused about regularization. It's a technique to prevent overfitting by adding penalty terms to the model's loss function (we'll see this again in the Methods section). Would you like a quick example to clarify?
+
+--- Observation 7 ---
+Input: The user reads the introduction section more smoothly, spending 5 minutes.
+
+[Agent 1 - Observation Analysis]: {
+  "current_content": "INTRODUCTION section",
+  "section_name": "INTRODUCTION",
+  "paper_title": null,
+  "reading_patterns": {
+    "is_pausing": false,
+    "is_rereading": false,
+    "reading_speed": "normal",
+    "confusion_indicators": [],
+    "section_transition": true
+  },
+  "user_actions": [
+    "wrote down questions about regularization"
+  ],
+  "time_on_section": "5 minutes",
+  "struggle_concepts": [
+    "regularization"
+  ]
+}
+
+[Agent 2 - User State]: {
+  "mood": "engaged",
+  "confusion_level": 0.7,
+  "engagement_level": 0.9,
+  "cognitive_load": "medium",
+  "potential_knowledge_gaps": [
+    "regularization"
+  ],
+  "needs_help_probability": 0.7,
+  "at_natural_break": false
+}
+
+[Agent 3 - Intervention Plan]: {
+  "should_intervene": true,
+  "intervention_type": "concept_explanation",
+  "urgency": "medium",
+  "specific_target": "regularization",
+  "reasoning": "User has a high confusion level (0.7) and specifically wrote down questions about regularization, indicating a need for clarification on this concept. Despite the short time since the last intervention, addressing this knowledge gap now would support their engagement and comprehension.",
+  "respect_reading_flow": false
+}
+
+[Agent 4 - Response]: {
+  "response": "Regularization helps prevent overfitting in linear regression by adding a penalty term to the loss function. This keeps model coefficients smaller and more generalizable. Would you like a quick example to clarify how it works?",
+  "display_type": "sidebar"
+}
+
+[Reading Metrics Summary]: {
+  "sections_completed": 5,
+  "total_reading_time": 186.04730558395386,
+  "average_time_per_section": 37.20946111679077,
+  "concepts_struggled": [
+    "regularization"
+  ],
+  "current_section": "introduction"
+}
+
+🤖 ASSISTANT RESPONSE: Regularization helps prevent overfitting in linear regression by adding a penalty term to the loss function. This keeps model coefficients smaller and more generalizable. Would you like a quick example to clarify how it works?
+
+--- Observation 8 ---
+Input: The user completes the introduction and moves to the METHODS section.
+
+[Agent 1 - Observation Analysis]: {
+  "current_content": "METHODS",
+  "section_name": "METHODS",
+  "paper_title": null,
+  "reading_patterns": {
+    "is_pausing": false,
+    "is_rereading": false,
+    "reading_speed": "normal",
+    "confusion_indicators": [],
+    "section_transition": true
+  },
+  "user_actions": [],
+  "time_on_section": "estimated 5 minutes on previous section (INTRODUCTION)",
+  "struggle_concepts": [
+    "regularization"
+  ]
+}
+
+[Agent 2 - User State]: {
+  "mood": "engaged",
+  "confusion_level": 0.4,
+  "engagement_level": 0.85,
+  "cognitive_load": "medium",
+  "potential_knowledge_gaps": [
+    "regularization"
+  ],
+  "needs_help_probability": 0.4,
+  "at_natural_break": true
+}
+
+[Agent 3 - Intervention Plan]: {
+  "should_intervene": true,
+  "intervention_type": "section_transition",
+  "urgency": "low",
+  "specific_target": "METHODS section",
+  "reasoning": "User is at a natural break point (section transition) and has a moderate need for help, with identified knowledge gaps in 'regularization'. While not urgently confused, this is an ideal moment to offer assistance without disrupting flow.",
+  "respect_reading_flow": true
+}
+
+[Agent 4 - Response]: {
+  "response": "I notice you're entering the METHODS section - this is a great moment to check if you'd like any clarification on regularization concepts before diving in. I'm happy to provide a quick refresher if needed!",
+  "display_type": "sidebar"
+}
+
+[Reading Metrics Summary]: {
+  "sections_completed": 6,
+  "total_reading_time": 231.94988226890564,
+  "average_time_per_section": 38.658313711484276,
+  "concepts_struggled": [
+    "regularization"
+  ],
+  "current_section": "METHODS"
+}
+
+🤖 ASSISTANT RESPONSE: I notice you're entering the METHODS section - this is a great moment to check if you'd like any clarification on regularization concepts before diving in. I'm happy to provide a quick refresher if needed!
+
+================================================================================
+TEST CASE 2: Frustrated Student During Exam Week
+================================================================================
+
+--- Observation 1 ---
+Input: User opens research paper on advanced machine learning, scrolling rapidly.
+
+[Agent 1 - Observation Analysis]: {
+  "current_content": "advanced machine learning research paper",
+  "section_name": null,
+  "paper_title": "advanced machine learning",
+  "reading_patterns": {
+    "is_pausing": false,
+    "is_rereading": false,
+    "reading_speed": "fast",
+    "confusion_indicators": [],
+    "section_transition": false
+  },
+  "user_actions": [
+    "scrolling rapidly"
+  ],
+  "time_on_section": "short (scrolling rapidly)",
+  "struggle_concepts": []
+}
+
+[Agent 2 - User State]: {
+  "mood": "neutral",
+  "confusion_level": 0.0,
+  "engagement_level": 0.3,
+  "cognitive_load": "low",
+  "potential_knowledge_gaps": [],
+  "needs_help_probability": 0.0,
+  "at_natural_break": false
+}
+
+[Agent 3 - Intervention Plan]: {
+  "should_intervene": false,
+  "intervention_type": "none",
+  "urgency": "low",
+  "specific_target": "n/a",
+  "reasoning": "User is scrolling rapidly through content with no signs of confusion (0.0 confusion level) or struggle. Engagement is low (0.3) but this may be due to initial skimming behavior which is common when first encountering a research paper. No natural break point exists and cognitive load is low. Best to observe longer before intervening.",
+  "respect_reading_flow": true
+}
+
+[Agent 4 - Response]: {
+  "response": null,
+  "display_type": null
+}
+
+[Reading Metrics Summary]: {
+  "sections_completed": 0,
+  "total_reading_time": 0,
+  "average_time_per_section": 0,
+  "concepts_struggled": [],
+  "current_section": null
+}
+
+[No intervention]
+
+--- Observation 2 ---
+Input: User reads for 30 seconds then slams hand on desk.
+
+[Agent 1 - Observation Analysis]: {
+  "current_content": "advanced machine learning",
+  "section_name": null,
+  "paper_title": null,
+  "reading_patterns": {
+    "is_pausing": false,
+    "is_rereading": false,
+    "reading_speed": "fast",
+    "confusion_indicators": [
+      "user slams hand on desk"
+    ],
+    "section_transition": false
+  },
+  "user_actions": [
+    "scrolling rapidly",
+    "slams hand on desk"
+  ],
+  "time_on_section": "30 seconds",
+  "struggle_concepts": [
+    "advanced machine learning concepts"
+  ]
+}
+
+[Agent 2 - User State]: {
+  "mood": "frustrated",
+  "confusion_level": 0.8,
+  "engagement_level": 0.7,
+  "cognitive_load": "high",
+  "potential_knowledge_gaps": [
+    "advanced machine learning concepts"
+  ],
+  "needs_help_probability": 0.9,
+  "at_natural_break": false
+}
+
+[Agent 3 - Intervention Plan]: {
+  "should_intervene": true,
+  "intervention_type": "concept_explanation",
+  "urgency": "high",
+  "specific_target": "advanced machine learning concepts",
+  "reasoning": "User shows high frustration (mood + physical action), high confusion, and high cognitive load. Strong indicators of struggling with 'advanced machine learning concepts' based on user state and observations. Despite not being at a natural break point, the urgency justifies interrupting to prevent further frustration.",
+  "respect_reading_flow": false
+}
+
+[Agent 4 - Response]: {
+  "response": "I notice you're feeling frustrated with these advanced concepts - let me explain them in simpler terms. Would you like me to break down machine learning fundamentals first before we tackle the advanced topics?",
+  "display_type": "popup"
+}
+
+[Reading Metrics Summary]: {
+  "sections_completed": 0,
+  "total_reading_time": 0,
+  "average_time_per_section": 0,
+  "concepts_struggled": [],
+  "current_section": null
+}
+
+🤖 ASSISTANT RESPONSE: I notice you're feeling frustrated with these advanced concepts - let me explain them in simpler terms. Would you like me to break down machine learning fundamentals first before we tackle the advanced topics?
+
+--- Observation 3 ---
+Input: User mutters 'I don't understand any of this garbage' while highlighting random text.
+
+[Agent 1 - Observation Analysis]: {
+  "current_content": "advanced machine learning paper",
+  "section_name": null,
+  "paper_title": null,
+  "reading_patterns": {
+    "is_pausing": false,
+    "is_rereading": false,
+    "reading_speed": "fast",
+    "confusion_indicators": [
+      "hand slamming",
+      "negative verbal expression",
+      "random highlighting"
+    ],
+    "section_transition": false
+  },
+  "user_actions": [
+    "highlighting random text"
+  ],
+  "time_on_section": "30 seconds",
+  "struggle_concepts": [
+    "advanced machine learning concepts"
+  ]
+}
+
+[Agent 2 - User State]: {
+  "mood": "frustrated",
+  "confusion_level": 0.9,
+  "engagement_level": 0.6,
+  "cognitive_load": "high",
+  "potential_knowledge_gaps": [
+    "advanced machine learning concepts"
+  ],
+  "needs_help_probability": 0.95,
+  "at_natural_break": false
+}
+
+[Agent 3 - Intervention Plan]: {
+  "should_intervene": true,
+  "intervention_type": "concept_explanation",
+  "urgency": "high",
+  "specific_target": "advanced machine learning concepts",
+  "reasoning": "User is highly frustrated and confused with a high cognitive load, exhibiting clear struggle indicators (e.g., hand slamming, negative verbal expression). Though not at a natural break point, the high probability of needing help (0.95) and active frustration signals justify immediate intervention to prevent disengagement. Concept explanation addresses the core knowledge gap.",
+  "respect_reading_flow": false
+}
+
+[Agent 4 - Response]: {
+  "response": "I notice you're feeling frustrated with these advanced concepts. Let's take a quick moment to break them down - which specific machine learning concept is causing the most difficulty? We'll tackle it step by step.",
+  "display_type": "popup"
+}
+
+[Reading Metrics Summary]: {
+  "sections_completed": 0,
+  "total_reading_time": 0,
+  "average_time_per_section": 0,
+  "concepts_struggled": [],
+  "current_section": null
+}
+
+🤖 ASSISTANT RESPONSE: I notice you're feeling frustrated with these advanced concepts. Let's take a quick moment to break them down - which specific machine learning concept is causing the most difficulty? We'll tackle it step by step.
+
+--- Observation 4 ---
+Input: User types in margin: 'HELP ME UNDERSTAND THIS!!!!' with multiple exclamation marks.
+
+[Agent 1 - Observation Analysis]: {
+  "current_content": "advanced machine learning paper (unclear specific section)",
+  "section_name": null,
+  "paper_title": "advanced machine learning",
+  "reading_patterns": {
+    "is_pausing": false,
+    "is_rereading": false,
+    "reading_speed": "fast",
+    "confusion_indicators": [
+      "hand slamming",
+      "negative muttering",
+      "random highlighting",
+      "desperate margin note"
+    ],
+    "section_transition": false
+  },
+  "user_actions": [
+    "scrolling rapidly",
+    "highlighting randomly",
+    "writing distressed margin note"
+  ],
+  "time_on_section": "30+ seconds",
+  "struggle_concepts": [
+    "fundamental understanding of paper content",
+    "general machine learning concepts"
+  ]
+}
+
+[Agent 2 - User State]: {
+  "mood": "frustrated",
+  "confusion_level": 0.95,
+  "engagement_level": 0.7,
+  "cognitive_load": "high",
+  "potential_knowledge_gaps": [
+    "fundamental understanding of paper content",
+    "general machine learning concepts",
+    "advanced machine learning concepts"
+  ],
+  "needs_help_probability": 0.98,
+  "at_natural_break": false
+}
+
+[Agent 3 - Intervention Plan]: {
+  "should_intervene": true,
+  "intervention_type": "break_suggestion",
+  "urgency": "high",
+  "specific_target": "General reading frustration",
+  "reasoning": "User shows multiple signs of frustration and high confusion (0.95) despite engagement. The hand slamming, distressed margin notes, and random highlighting all indicate the cognitive load is too high. The user likely needs to step away before productive learning can resume.",
+  "respect_reading_flow": false
+}
+
+[Agent 4 - Response]: {
+  "response": "You seem really frustrated with this complex material - that's completely normal with advanced ML papers! Would a 5-minute break help refresh your focus? We can tackle this again with fresh eyes.",
+  "display_type": "popup"
+}
+
+[Reading Metrics Summary]: {
+  "sections_completed": 0,
+  "total_reading_time": 0,
+  "average_time_per_section": 0,
+  "concepts_struggled": [],
+  "current_section": null
+}
+
+🤖 ASSISTANT RESPONSE: You seem really frustrated with this complex material - that's completely normal with advanced ML papers! Would a 5-minute break help refresh your focus? We can tackle this again with fresh eyes.
+
+--- Observation 5 ---
+Input: User stares at the same equation for 3 minutes without moving.
+
+[Agent 1 - Observation Analysis]: {
+  "current_content": "equation",
+  "section_name": "unknown",
+  "paper_title": "advanced machine learning",
+  "reading_patterns": {
+    "is_pausing": true,
+    "is_rereading": false,
+    "reading_speed": "slow",
+    "confusion_indicators": [
+      "staring without moving",
+      "frustration gestures",
+      "random highlighting",
+      "angry annotations"
+    ],
+    "section_transition": false
+  },
+  "user_actions": [
+    "highlighting text",
+    "typing in margin"
+  ],
+  "time_on_section": "3+ minutes",
+  "struggle_concepts": [
+    "equation being viewed"
+  ]
+}
+
+[Agent 2 - User State]: {
+  "mood": "frustrated",
+  "confusion_level": 0.98,
+  "engagement_level": 0.7,
+  "cognitive_load": "high",
+  "potential_knowledge_gaps": [
+    "fundamental understanding of paper content",
+    "general machine learning concepts",
+    "advanced machine learning concepts",
+    "specific equation context"
+  ],
+  "needs_help_probability": 0.98,
+  "at_natural_break": false
+}
+
+[Agent 3 - Intervention Plan]: {
+  "should_intervene": true,
+  "intervention_type": "concept_explanation",
+  "urgency": "high",
+  "specific_target": "equation being viewed",
+  "reasoning": "User shows high confusion and frustration (0.98) with a specific equation, is pausing with angry annotations, and has high cognitive load. Immediate concept explanation is needed before continuing.",
+  "respect_reading_flow": false
+}
+
+[Agent 4 - Response]: {
+  "response": "I notice you're struggling with this equation. Let me break it down step-by-step to help clarify it before we move forward. Would you like me to explain each component?",
+  "display_type": "popup"
+}
+
+[Reading Metrics Summary]: {
+  "sections_completed": 0,
+  "total_reading_time": 0,
+  "average_time_per_section": 0,
+  "concepts_struggled": [],
+  "current_section": "unknown"
+}
+
+🤖 ASSISTANT RESPONSE: I notice you're struggling with this equation. Let me break it down step-by-step to help clarify it before we move forward. Would you like me to explain each component?
+
+--- Observation 6 ---
+Input: User takes a break from reading the paper.
+
+[Agent 1 - Observation Analysis]: {
+  "current_content": "equation",
+  "section_name": null,
+  "paper_title": null,
+  "reading_patterns": {
+    "is_pausing": true,
+    "is_rereading": false,
+    "reading_speed": "slow",
+    "confusion_indicators": [
+      "stares at equation for long time",
+      "slammed hand on desk",
+      "random highlighting",
+      "frustrated marginal note"
+    ],
+    "section_transition": false
+  },
+  "user_actions": [
+    "took a break"
+  ],
+  "time_on_section": "3 minutes (on equation) + prior 30 seconds",
+  "struggle_concepts": [
+    "equation interpretation",
+    "general paper comprehension"
+  ]
+}
+
+[Agent 2 - User State]: {
+  "mood": "very frustrated",
+  "confusion_level": 0.95,
+  "engagement_level": 0.8,
+  "cognitive_load": "high",
+  "potential_knowledge_gaps": [
+    "equation interpretation",
+    "general paper comprehension",
+    "mathematical foundation of the equation",
+    "contextual understanding of the equation's role"
+  ],
+  "needs_help_probability": 0.99,
+  "at_natural_break": true
+}
+
+[Agent 3 - Intervention Plan]: {
+  "should_intervene": true,
+  "intervention_type": "concept_explanation",
+  "urgency": "high",
+  "specific_target": "equation interpretation and contextual understanding",
+  "reasoning": "User is very frustrated with high confusion and cognitive load, showing clear need for conceptual help with the equation. The fact they're at a natural break point and just took a break suggests they're stuck rather than needing another pause. Their engagement is still high despite frustration, making this a teachable moment.",
+  "respect_reading_flow": false
+}
+
+[Agent 4 - Response]: {
+  "response": "I notice you're struggling with this equation - let's break it down together piece by piece. Would it help if I explain how each term relates to the machine learning context?",
+  "display_type": "popup"
+}
+
+[Reading Metrics Summary]: {
+  "sections_completed": 0,
+  "total_reading_time": 0,
+  "average_time_per_section": 0,
+  "concepts_struggled": [],
+  "current_section": "unknown"
+}
+
+🤖 ASSISTANT RESPONSE: I notice you're struggling with this equation - let's break it down together piece by piece. Would it help if I explain how each term relates to the machine learning context?
+
+--- Observation 7 ---
+Input: User returns and moves to the CONCLUSION section, skipping the middle sections.
+
+[Agent 1 - Observation Analysis]: {
+  "current_content": "CONCLUSION section",
+  "section_name": "CONCLUSION",
+  "paper_title": null,
+  "reading_patterns": {
+    "is_pausing": false,
+    "is_rereading": false,
+    "reading_speed": "normal",
+    "confusion_indicators": [
+      "skipped sections",
+      "previous frustration noted"
+    ],
+    "section_transition": true
+  },
+  "user_actions": [
+    "skipped middle sections",
+    "took a break earlier",
+    "highlighted text",
+    "typed in margin for help"
+  ],
+  "time_on_section": "just started",
+  "struggle_concepts": [
+    "equations",
+    "middle sections content"
+  ]
+}
+
+[Agent 2 - User State]: {
+  "mood": "frustrated",
+  "confusion_level": 0.85,
+  "engagement_level": 0.7,
+  "cognitive_load": "high",
+  "potential_knowledge_gaps": [
+    "equation interpretation",
+    "general paper comprehension",
+    "mathematical foundation of the equation",
+    "contextual understanding of the equation's role",
+    "middle sections content"
+  ],
+  "needs_help_probability": 0.95,
+  "at_natural_break": false
+}
+
+[Agent 3 - Intervention Plan]: {
+  "should_intervene": true,
+  "intervention_type": "concept_explanation",
+  "urgency": "high",
+  "specific_target": "general paper comprehension",
+  "reasoning": "User is highly frustrated and confused (0.85), with high cognitive load, and skipped middle sections which likely contain critical information. They are at a section transition (CONCLUSION) but lack foundational understanding. Their actions (highlighting, margin notes) indicate active struggle. Immediate concept explanation is needed to address comprehension gaps before proceeding.",
+  "respect_reading_flow": false
+}
+
+[Agent 4 - Response]: {
+  "response": "I notice you're feeling frustrated with this paper. Let me briefly explain the key concepts from the middle sections you skipped - these likely relate to the mathematical foundation and context of the equations mentioned in the conclusion. Would you like me to summarize them first?",
+  "display_type": "popup"
+}
+
+[Reading Metrics Summary]: {
+  "sections_completed": 1,
+  "total_reading_time": 81.17046856880188,
+  "average_time_per_section": 81.17046856880188,
+  "concepts_struggled": [],
+  "current_section": "CONCLUSION"
+}
+
+🤖 ASSISTANT RESPONSE: I notice you're feeling frustrated with this paper. Let me briefly explain the key concepts from the middle sections you skipped - these likely relate to the mathematical foundation and context of the equations mentioned in the conclusion. Would you like me to summarize them first?
